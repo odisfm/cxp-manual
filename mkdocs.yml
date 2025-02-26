@@ -1,0 +1,48 @@
+site_name: ClyphX Pro manual
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - content.code.copy
+    - navigation.tracking
+#    - navigation.tabs
+    - navigation.sections
+#    - navigation.footer
+    - navigation.header
+    - navigation.indexes
+    - navigation.top
+#    - toc.integrate
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  font:
+    text: Open Sans
+  icon:
+    logo: /material/view-grid-outline
+    repo: fontawesome/brands/github
+
+plugins:
+  - privacy
+  - search
+  - awesome-nav
+  - meta
+  - mkdocs-nav-weight:
+      section_renamed: false
+      index_weight: -10
+      warning: true
+      reverse: false
+      headless_included: false

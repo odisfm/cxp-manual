@@ -6,6 +6,11 @@ weight: 6
 
 The following Actions are [Track-based Actions](/manual/general-action-information/#track-based-actions) that allow you to control parameters, properties and functions of Devices. By default, these Actions will apply to the Device selected on the Track. If no Device is selected, these Actions will apply to the first Device on the Track. You can apply these Actions to other Devices or to ranges of Devices [as described here](/manual/general-action-information/#applying-actions-to-specific-objects-and-ranges). However, unless a Device's name is specified, these will strictly apply to Devices that are not nested within Racks. You can apply these Actions to Devices that are nested within Racks by specifying the Device's name or [as described here](/manual/general-action-information/#applying-actions-to-nested-devices).
 
+!!! note "Notes"
+    If the Device you're looking to control is not a native Live Device, Actions will only apply to the configured parameters of the Device.
+
+    When it comes to controlling parameters, if the parameter is mapped to a Macro, the parameter cannot be controlled. You should control the Macro instead.
+
 
 ### DEV
 

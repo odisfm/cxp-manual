@@ -32,7 +32,7 @@ theme:
   font:
     text: Noto Sans
   icon:
-    logo: /material/view-grid-outline
+    logo: /material/help-circle
     repo: fontawesome/brands/github
 
 plugins:
@@ -64,3 +64,6 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - toc:
       toc_depth: 3
+      permalink: true
+#      permalink_title: Anchor link to this section for reference
+

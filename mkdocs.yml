@@ -1,4 +1,6 @@
 site_name: ClyphX Pro manual
+site_url: https://cxpman.com
+
 
 theme:
   name: material

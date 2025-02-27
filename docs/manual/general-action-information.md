@@ -1,10 +1,14 @@
+---
+weight: 2
+---
+
 # General Action Information
 
 The following sections provide general information that applies to various ClyphX Pro Actions.
 
 ## Track-based actions
 
-Track-based Actions, which include [Track Actions](/action-reference/track-actions) through [Clip Note Actions](/action-reference/clip-note-actions), are Actions that can be applied to Tracks and the objects they contain (such as Devices and Clips). If no Track is specified, these Actions will be applied to either the Track the [X-Clip](/core-concepts#x-clips) resides on or (in the case of other [X-Triggers](/core-concepts#x-triggers)) the selected Track. You can apply these Actions to other Tracks or to ranges of Tracks as described below.
+Track-based Actions, which include [Track Actions](/action-reference/track-actions) through [Clip Note Actions](/action-reference/clip-note-actions), are Actions that can be applied to Tracks and the objects they contain (such as Devices and Clips). If no Track is specified, these Actions will be applied to either the Track the [X-Clip](/manual/core-concepts#x-clips) resides on or (in the case of other [X-Triggers](/manual/core-concepts#x-triggers)) the selected Track. You can apply these Actions to other Tracks or to ranges of Tracks as described below.
 
 ## Applying Actions to Specific Objects and Ranges
 
@@ -148,30 +152,14 @@ DEV DR SCROLL >4
 
 ## Continuous Parameters
 
-#### Ramping parameters
-
 All of the Continuous Parameters offer several control options via keywords.
-
-The values of Continuous Parameters can also be ramped up or down over a number of milliseconds or in sync with Live's playback via the `RAMP` or `RAMPS` keywords respectively. After this keyword, you'll specify the ramp duration (in hundreds of milliseconds or Beats/Bars) and the keyword from above to use for setting the value at the end of the ramp. For examples
-
-`VOL RAMP 8 *2` 
-
-_Multiply the parameter value by 2 over 800 milliseconds_
-
-`DEV P1 RAMPS 16 RESET` 
-
-_Reset the parameter value over 16 Beats._
-
-`SEND A RAMPS 16B RND`
-
-_Randomize the parameter value over 16 Bars._
 
 !!! note
     Chain Selectors, on/off switches and multi-option controls (like a filter type chooser) cannot be reset or randomized.
 
 ### `x`
 
-`x` is the parameter value to set (in the range of 0 – 127). The value of some parameters can be set by the value's name. These names are listed in the [Device Parameter Name Reference Lesson](/setup/#documentation).
+`x` is the parameter value to set (in the range of 0 – 127). The value of some parameters can be set by the value's name. These names are listed in the [Device Parameter Name Reference Lesson](/manual/setup/#documentation).
 
 ```
 DEV CS 100
@@ -262,6 +250,24 @@ Toggle the parameter's value between its minimum and maximum value.
 ```
 DEV "Resonance" TGL
 ```
+
+!!! tip
+    ## Ramping parameters
+    
+    The values of Continuous Parameters can also be ramped up or down over a number of milliseconds or in sync with Live's playback via the `RAMP` or `RAMPS` keywords respectively. After this keyword, you'll specify the ramp duration (in hundreds of milliseconds or Beats/Bars) and the keyword from above to use for setting the value at the end of the ramp. For example:
+    
+    `VOL RAMP 8 *2` 
+    
+    Multiply the parameter value by 2 over 800 milliseconds
+    
+    `DEV P1 RAMPS 16 RESET` 
+    
+    Reset the parameter value over 16 Beats.
+    
+    `SEND A RAMPS 16B RND`
+    
+    Randomize the parameter value over 16 Bars.
+
 
 ## Quasi Continuous Parameters
 

@@ -1,3 +1,7 @@
+---
+weight: 8
+---
+
 # Support
 
 ## Submit a support ticket

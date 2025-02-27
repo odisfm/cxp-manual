@@ -1,3 +1,7 @@
+---
+weight: 1
+---
+
 # Core Concepts
 
 ClyphX Pro is a deceptively simple scripting language for music producers and performers who use
@@ -103,7 +107,7 @@ You'll define OSC addresses to use as X-OSCs in X-OSC.txt. By default, ClyphX Pr
 
 ## XT Scripts
 
-Upon [installing ClyphX Pro](/setup/#installing-clyphx-pro), five additional Control Surface scripts (ClyphX_Pro_XTA – ClyphX_Pro_XTE) will be installed. XT Scripts allow you to use the controls on additional MIDI
+Upon [installing ClyphX Pro](/manual/setup/#installing-clyphx-pro), five additional Control Surface scripts (ClyphX_Pro_XTA – ClyphX_Pro_XTE) will be installed. XT Scripts allow you to use the controls on additional MIDI
 controllers and also use the Midi Actions to send MIDI messages to the MIDI port selected as the
 Output of each XT Script.
 
@@ -112,7 +116,7 @@ Output of each XT Script.
 
 ## Max for Live
 
-In addition to [X-Triggers](#x-triggers) and [XT Scripts](#xt-scripts), it's also possible to trigger ClyphX Pro Actions from Max for Live. The [ClyphX Pro Live Lessons](/setup/#documentation) include a Max for Live Integration Lesson and an example Max for Live Device that demonstrates how this works. Additionally, the Triggering Actions via Notes in a Clip Lesson provides a Max for Live Device that allows ClyphX Pro Actions to be triggered via Notes in MIDI Clips.
+In addition to [X-Triggers](#x-triggers) and [XT Scripts](#xt-scripts), it's also possible to trigger ClyphX Pro Actions from Max for Live. The [ClyphX Pro Live Lessons](/manual/setup/#documentation) include a Max for Live Integration Lesson and an example Max for Live Device that demonstrates how this works. Additionally, the Triggering Actions via Notes in a Clip Lesson provides a Max for Live Device that allows ClyphX Pro Actions to be triggered via Notes in MIDI Clips.
 
 ## Settings Folders/Files
 

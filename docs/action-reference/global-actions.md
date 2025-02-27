@@ -1,6 +1,8 @@
+# Global Actions
+
 The following Actions allow you to control Live Set-wide properties and functions as well as access internal ClyphX Pro features.
 
-## ADDAUDIO
+### ADDAUDIO
 
 Create an Audio Track to the right of the selected Track.
 
@@ -14,7 +16,7 @@ ADDAUDIO 5
 ADDAUDIO -1
 ```
 
-## ADDMIDI
+### ADDMIDI
 
 Create a MIDI Track to the right of the selected Track.
 
@@ -28,15 +30,15 @@ ADDMIDI 10
 ADDMIDI -1
 ```
 
-## ADDRETURN
+### ADDRETURN
 
 Create a Return Track at the end of the Return list.
 
-## B2A
+### B2A
 
 Back to Arrangement.
 
-## BIND
+### BIND
 
 ### BIND `i` `x`
 
@@ -60,7 +62,7 @@ BIND MY_BUTTON <,
 BIND MY_KNOB >
 ```
 
-## BOUNDP `x`
+### BOUNDP `x`
 
 _For use with the optional [ClyphX Pro Bindings Accessory](/optional-accessories/#clyphx-pro-bindings)._
 
@@ -73,7 +75,7 @@ BOUNDP 100,
 BOUNDP RND
 ```
 
-## BPM `x`
+### BPM `x`
 
 Adjust Tempo. This is a Quasi Continuous parameter.
 
@@ -83,15 +85,15 @@ BPM 85.53,
 BPM >
 ```
 
-## CAP
+### CAP
 
 Trigger [Capture](https://help.ableton.com/hc/en-us/articles/360000776450-Capture-MIDI).
 
-## DEBUG
+### DEBUG
 
 Activate debugging mode, which causes ClyphX Pro to log events as they occur to assist in [Troubleshooting](/troubleshooting).
 
-## DRAW
+### DRAW
 
 Toggle, turn on or turn off Draw Mode.
 
@@ -101,11 +103,11 @@ DRAW ON
 DRAW OFF
 ```
 
-## DUMMY or D
+### DUMMY or D
 
 This Action does nothing. This is intended for use with [PSEQ Action Lists](/core-concepts#sequential-action-lists) as well as LSEQ and Default with Stop X-Clips.
 
-## FOLLOW
+### FOLLOW
 
 Toggle, turn on or turn off Follow.
 
@@ -115,7 +117,7 @@ FOLLOW ON
 FOLLOW OFF
 ```
 
-## FULLVELO
+### FULLVELO
 
 Toggle, turn on or turn off Full Velocity. When on, notes sent from the controller selected as the Input of the ClyphX Pro Control Surface will have full velocity (127).
 
@@ -125,7 +127,7 @@ FULLVELO ON
 FULLVELO OFF
 ```
 
-## GQ
+### GQ
 
 Toggle Global Quantization value between None and the last value.
 
@@ -139,11 +141,11 @@ GQ 8 BARS
 GQ >
 ```
 
-## GRV `x`
+### GRV `x`
 
 Adjust Global Groove Amount. This is a [Quasi Continuous Parameter](/general-action-information/#quasi-continuous-parameters).
 
-## INSAUDIO or INSMIDI
+### INSAUDIO or INSMIDI
 
 Insert an Audio or MIDI Track to the right of the selected Track that will be armed and routed from the selected Track. This will not perform an insertion if the selected Track is not the correct type. For example, if the selected Track doesn't have Audio output, `INSAUDIO` will do nothing.
 
@@ -152,7 +154,7 @@ INSAUDIO
 INSMIDI
 ```
 
-## LOC `x`
+### LOC `x`
 
 `x` is the name of the Arrangement Locator to jump to.
 
@@ -160,7 +162,7 @@ INSMIDI
 LOC "Verse 1"
 ```
 
-## LOC `<` or `>`
+### LOC `<` or `>`
 
 Jump to the Prev/Next Arrangement Locator.
 
@@ -169,7 +171,7 @@ LOC <
 LOC >
 ```
 
-## LOCLOOP `x`
+### LOCLOOP `x`
 
 `x` is the name of the Arrangement Locator to jump to. Also, the Arrangement Loop Start position will move to the position of this Locator.
 
@@ -177,7 +179,7 @@ LOC >
 LOCLOOP "Hook"
 ```
 
-## LOOP
+### LOOP
 
 Toggle, turn on or turn off Arrangement Loop.
 
@@ -229,7 +231,7 @@ LOOP START 1.1.1
 LOOP START "My Locator"
 ```
 
-## METRO
+### METRO
 
 Toggle, turn on or turn off Metronome. 
 
@@ -239,7 +241,7 @@ METRO ON
 METRO OFF
 ```
 
-## MSG `x`
+### MSG `x`
 
 `x` is the message to show in Live's Status Bar. By default, this will show the message in lower case. If you'd like capitalization to be preserved, use quotes.
 
@@ -248,7 +250,7 @@ MSG HELLO WORLD
 MSG "Preserve Caps"
 ```
 
-## OPEN `x`
+### OPEN `x`
 
 x is the path to the file to open in its default application. When opening Sets, dialogs that come up upon closing the current Set will be managed.
 
@@ -257,7 +259,7 @@ OPEN "/Users/Stray/My File.txt"
 OPEN "C:\My Live Set.als"
 ```
 
-## OVER
+### OVER
 
 Toggle, turn on or turn off Arrangement Overdub. 
 
@@ -267,7 +269,7 @@ OVER ON
 OVER OFF
 ```
 
-## PIN
+### PIN
 
 Toggle, turn on or turn off Punch In. 
 
@@ -277,7 +279,7 @@ PIN ON
 PIN OFF
 ```
 
-## POUT
+### POUT
 
 Toggle, turn on or turn off Punch Out.
 
@@ -285,7 +287,7 @@ Toggle, turn on or turn off Punch Out.
 PIN, PIN ON, PIN OFF
 ```
 
-## PSEQ RESET
+### PSEQ RESET
 
 Reset all [PSEQ Action Lists](/core-concepts#sequential-action-lists) so that they start back at their beginning.
 
@@ -293,7 +295,7 @@ Reset all [PSEQ Action Lists](/core-concepts#sequential-action-lists) so that th
 
 `x` is the [Identifier](/core-concepts#identifiers) of the PSEQ Action List to reset. 
 
-## REC
+### REC
 
 Toggle, turn on or turn off Arrangement Record. 
 
@@ -303,15 +305,15 @@ REC ON
 REC OFF
 ```
 
-## REINIT
+### REINIT
 
 Reinitialize all [Macros](/core-cocncepts#macros) and [Variables](/core-concepts#variables) to their initial states. This will cause the related files to be re-read allowing you to modify the files, trigger this Action and have the changes to the files immediately be applied.
 
-## RESTART
+### RESTART
 
 Restart Arrangement to Position 1.1.1.
 
-## RQ
+### RQ
 
 Adjust Record Quantization. This is an [Adjustable Property](/general-action-information/#adjustable-properties). The names of the available Quantization value are: 
 
@@ -331,7 +333,7 @@ RQ 1/4
 RQ >
 ```
 
-## RPT
+### RPT
 
 !!! note
     The RPT Actions require that a controller be selected as the Input of the ClyphX Pro Control Surface and that its Track switch be turned on. When RPT is on, notes sent from the controller will produce a consistent stream of rhythmic notes at the specified rate. Additionally, the available Note Repeat rates are as follows: `OFF`, `1/4D`, `1/4`, `1/4T`, `1/8D`, `1/8`, `1/8T`, `1/16D`, `1/16`, `1/16T`, `1/32D`, `1/32`, `1/32T`, `1/64D`, `1/64`, `1/64T` (where 'D' stands for dotted and 'T' stands for triplet).
@@ -348,11 +350,11 @@ RPT 1/4
 RPT 1/32T
 ```
 
-## RTRIG
+### RTRIG
 
 Retrigger all Clips that are currently recording.
 
-## SATM
+### SATM
 
 Toggle, turn on or turn off Automation Arm. 
 
@@ -362,11 +364,11 @@ SATM ON
 SATM OFF
 ```
 
-## SATMR
+### SATMR
 
 Re-enable automation that has been overridden.
 
-## SELP `x`
+### SELP `x`
 
 Adjust the value of the selected parameter. This is a [Continuous Parameter](/general-action-information/#continuous-parameters).
 
@@ -375,11 +377,11 @@ SELP 100
 SELP >
 ```
 
-## SETCONT
+### SETCONT
 
 Continue playback from the last stop point. This is only useful when triggered from an [X-Control](/core-concepts#x-controls) or [X-OSC](/core-concepts#x-osc).
 
-## SETJUMP `x`
+### SETJUMP `x`
 
 `x` is the Arrangement Playback Position to jump to in
 Bars.Beats.Sixteenths.
@@ -400,11 +402,11 @@ SETJUMP <, SETJUMP >
 
 Jump the Arrangement's Playback Position Backward/Forward by `x` Beats (specify `B` for Bars).
 
-## SETLOC
+### SETLOC
 
 Add a Locator at the current Arrangement position or, if a Locator already exists at the position, delete the Locator.
 
-## SETPLAY
+### SETPLAY
 
 Toggle, turn on or turn off playback. 
 
@@ -414,15 +416,15 @@ SETPLAY ON
 SETPLAY OFF
 ```
 
-## SETPLAYSEL
+### SETPLAYSEL
 
 Play the selection in Arrangement View if there is one.
 
-## SETSTOP
+### SETSTOP
 
 Stop playback. This will actually toggle playback state, so it can be used to start/stop playback when triggered from an [X-Control](/core-concepts#x-controls) or [X-OSC](/core-concepts#x-osc).
 
-## SIG `x`/`y`
+### SIG `x`/`y`
 
 `x` is the Time Signature Numerator and `y` is the Denominator. 
 
@@ -431,7 +433,7 @@ SIG 4/4
 SIG 6/8
 ```
 
-## SREC
+### SREC
 
 Toggle, turn on or turn off Session Record.
 
@@ -441,7 +443,7 @@ SREC ON
 SREC OFF
 ```
 
-## SRECFIX `x`
+### SRECFIX `x`
 
 Trigger fixed-length Session Record on all armed Tracks where x is the length to record in Bars. Note, however, that Session Recording is always quantized according to Global Quantization and so your Global Quantization value needs to be less than or equal to the number of Bars to record for. For example, to record for 4 Bars, Global Quantization would need to be 4 Bars or less.
 
@@ -451,7 +453,7 @@ SRECFIX 16
 SRECFIX 0.5
 ```
 
-## STOPALL
+### STOPALL
 
 Stop all Clips
 
@@ -459,15 +461,15 @@ Stop all Clips
 
 Stop all Clips immediately (not quantized).
 
-## SWING `x`
+### SWING `x`
 
 Adjust the Swing amount (in the range of 0 - 100) to apply to Note Repeat(RPT). This is a [Quasi Continuous Parameter](/general-action-information/#quasi-continuous-parameters).
 
-## TAPBPM
+### TAPBPM
 
 Tap Tempo.
 
-## TFOLLOW
+### TFOLLOW
 
 Toggle, turn on or turn off Tempo Follower. 
 
@@ -477,17 +479,17 @@ TFOLLOW ON
 TFOLLOW OFF
 ```
 
-## TIME
+### TIME
 
 Display the amount of time spent (in the format of hours:minutes:seconds) in Live's Status Bar since the current Live Set was loaded.
 
-## UNBIND
+### UNBIND
 
 _For use with the optional [ClyphX Pro Bindings Accessory](/optional-accessories/#clyphx-pro-bindings)._
 
 Unbind all bound controls (leaving them with no binding).
 
-## UNDO or REDO 
+### UNDO or REDO 
 
 Undo or Redo.
 
@@ -496,5 +498,5 @@ UNDO
 REDO
 ```
 
-## WAIT `x`
+### WAIT `x`
 

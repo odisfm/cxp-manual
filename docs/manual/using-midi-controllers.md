@@ -1,3 +1,7 @@
+---
+weight: 4
+---
+
 # Using MIDI Controllers
 
 You can use the controls on your MIDI controllers with a variety of ClyphX Pro's features ([X-Controls](/core-concepts#x-controls), [G-Controls](/optional-accessories#clyphx-pro-g-controls) and [Bindings](/optional-accessories/#clyphx-pro-bindings) specifically). The ClyphX Pro Control Surface itself can be used with one MIDI controller, which you can specify by selecting the controller as the **Input** and (if the controller has LEDs that can be remotely controlled and/or motorized faders) **Output** of the ClyphX Pro Control Surface.

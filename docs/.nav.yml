@@ -1,13 +1,5 @@
 nav:
   - About: /
   - Buy ClyphX Pro: https://isotonikstudios.com/product/clyphx-pro/
-  - Setup: setup
-  - Core Concepts: core-concepts
   - Action Reference: action-reference
-  - General Action Informaton: general-action-information
-  - Addendum: addendum
-  - Using MIDI Controllers: using-midi-controllers
-  - Updating and Backing Up: updating-and-backing-up
-  - Troubleshooting: troubleshooting
-  - Optional Accessories: optional-accessories
-  - Support: support
+  - Manual: manual

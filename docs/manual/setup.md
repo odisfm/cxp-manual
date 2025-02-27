@@ -1,8 +1,12 @@
+---
+weight: 0
+---
+
 # Setup
 
 This section covers the initial installation steps you will need to complete in order to use ClyphX Pro.
 Please take your time when completing these steps. If you should run into trouble when performing
-any of these steps, please refer to the [Troubleshooting](/troubleshooting) section.
+any of these steps, please refer to the [Troubleshooting](/manual/troubleshooting) section.
 
 ## Installing ClyphX Pro
 
@@ -39,4 +43,4 @@ Clip Slot in Live. If you don't see this, please double-check that you've comple
 If you do see the colored ring, add a Clip to your Live Set and name it `[TEST] METRO`. Then launch
 this Clip and it should toggle the state of the Metronome. If so, everything is working and you can get
 started using ClyphX Pro in more interesting ways. However, before doing so it is recommended that
-you familiarize yourself with the [Core Concepts](/core-concepts) of ClyphX Pro.
+you familiarize yourself with the [Core Concepts](/manual/core-concepts) of ClyphX Pro.

@@ -8,7 +8,7 @@ theme:
     - navigation.tracking
 #    - navigation.tabs
     - navigation.sections
-#    - navigation.footer
+    - navigation.footer
     - navigation.header
     - navigation.indexes
     - navigation.top

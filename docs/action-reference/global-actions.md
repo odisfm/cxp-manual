@@ -506,3 +506,19 @@ REDO
 
 ### WAIT `x`
 
+`x` is the amount of time (in hundreds of milliseconds) to wait before
+proceeding to the next Action in the Action List. This cannot be used in [PSEQ Action Lists](/manual/core-concepts/#sequential-action-lists) or [LSEQ X-Clips](/manual/core-concepts/#lseq-or-rlseq).
+
+```
+WAIT 2
+WAIT 10
+```
+
+### WAITS `x`
+
+Same as above except `x` is the amount of time in Beats (specify `B` for Bars) to wait.
+
+```
+WAITS 2B
+WAITS 8
+```

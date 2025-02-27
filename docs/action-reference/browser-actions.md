@@ -90,7 +90,7 @@ LOADSOUND "Once Beaten.adg"
 
 ### LOADUSER `x`
 
-x is the name of the item (from the User Library category) to load. You can alternatively specify a User Library folder path to randomly load an item from. When specifying folder paths, use a slash as the path separator.
+`x` is the name of the item (from the User Library category) to load. You can alternatively specify a User Library folder path to randomly load an item from. When specifying folder paths, use a slash as the path separator.
 
 ```
 LOADUSER "My Rack.adg"

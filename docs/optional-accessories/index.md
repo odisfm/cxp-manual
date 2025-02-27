@@ -6,7 +6,7 @@ This section describes optional accessories that can be purchased for use with C
 
 [Link to purchase](https://isotonikstudios.com/product/clyphx-pro-bindings/).
 
-The ClyphX Pro Bindings accessory allows controls on a MIDI controller to be dynamically bound and rebound to parameters in Live. This provides functionality that is somewhat similar to MIDI mapping in Live, but is far more dynamic in the sense that your bindings can change over the course of a Live Set(by using the [BIND](/action-reference/global-actions#bind) Action) and you can bind to parameters (such as parameters of the selected Track) that cannot be MIDI mapped.
+The ClyphX Pro Bindings accessory allows controls on a MIDI controller to be dynamically bound and rebound to parameters in Live. This provides functionality that is somewhat similar to MIDI mapping in Live, but is far more dynamic in the sense that your bindings can change over the course of a Live Set (by using the [BIND](/action-reference/global-actions#bind) Action) and you can bind to parameters (such as parameters of the selected Track) that cannot be MIDI mapped.
 
 There are two types of bindings.
 

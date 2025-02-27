@@ -208,7 +208,7 @@ Variables are available:
 !!! warning "Advanced"
     This is an advanced concept that is really only useful to Python programmers. If you're not already familiar with Python, you can safely skip this section.
 
-In addition to all of the [Actions](/action-reference) you can access with ClyphX Pro, you can also create your own User Actions that function just like builtin Actions. User Actions are created in the ClyphX_Pro folder within your User Library. The exact location within the folder is `ClyphX_Pro/clyphx_pro/user_actions`.
+In addition to all of the [Actions](/action-reference) you can access with ClyphX Pro, you can also create your own User Actions that function just like built-in Actions. User Actions are created in the ClyphX_Pro folder within your User Library. The exact location within the folder is `ClyphX_Pro/clyphx_pro/user_actions`.
 
 !!! note "Editor's Note"
     An update to ClyphX Pro allows for another user actions folder. The location of this folder is `User Library/Remote Scripts/_user_actions`. 

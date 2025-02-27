@@ -57,8 +57,10 @@ MIDI data to external MIDI device. In order to accomplish this, select the exter
 !!! note
     The next two options require a loopback device such as loopMIDI (Windows) or IAC (macOS, built-in).
 
-### Option B
+### Option B :material-check-circle:
 _This is the recommended option, but is not compatible with SysEx data in Live 9_
+
+:material-done:
 
 MIDI data to loopback device, re-routed back into Live as Track data. This option allows the MIDI data to be sent into MIDI Tracks in Live. From there, the data can be routed via the MIDI Track’s output routing and/or recorded.
 

@@ -12,7 +12,10 @@ The following Actions apply to the Push and Push2 Control Surface scripts. These
 
 In addition to the Actions listed here, the standard [Control Surface Actions](/action-reference/control-surface-actions) can also be applied to the Push and Push2 Control Surface scripts. However, with Push2, the RING-related Actions may produce undesirable results due to Push2's inclusion of Chain mixer settings alongside normal Track mixer settings.
 
-!!! warning "Push 2 with Ableton 12+"
+!!! warning
+
+    #### Push 2 with Ableton 12+
+
     As of Live 12, Push 2 no longer uses the traditional remote script system. When Push 2 is using this new 'mode', the actions on this page won't work.
 
     You can force Push 2 to use the legacy remote script mode and regain access to these actions. To do this, install the following Options.txt command:

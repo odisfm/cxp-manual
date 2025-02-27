@@ -46,7 +46,7 @@ Back to Arrangement.
 
 ### BIND `i` `x`
 
-_For use with the optional [ClyphX Pro Bindings Accessory](/optional-accessories/#clyphx-pro-bindings)._
+_For use with the optional [ClyphX Pro Bindings Accessory](/manual/optional-accessories/#clyphx-pro-bindings)._
 
 Bind the control named `i` to `x`.
 
@@ -57,7 +57,7 @@ BIND MY_KNOB SEL/VOL
 
 ### BIND `i` `<x` or `>x` 
 
-_For use with the optional [ClyphX Pro Bindings Accessory](/optional-accessories/#clyphx-pro-bindings)._
+_For use with the optional [ClyphX Pro Bindings Accessory](/manual/optional-accessories/#clyphx-pro-bindings)._
 
 Bind the control named `i` to the Prev/Next parameter relative to the currently bound parameter. This only applies to Device parameters, so will have no effect on Mixer parameter bindings.
 
@@ -68,7 +68,7 @@ BIND MY_KNOB >
 
 ### BOUNDP `x`
 
-_For use with the optional [ClyphX Pro Bindings Accessory](/optional-accessories/#clyphx-pro-bindings)._
+_For use with the optional [ClyphX Pro Bindings Accessory](/manual/optional-accessories/#clyphx-pro-bindings)._
 
 Adjust the value of the last parameter that was adjusted via the Bindings Accessory.
 
@@ -95,7 +95,7 @@ Trigger [Capture](https://help.ableton.com/hc/en-us/articles/360000776450-Captur
 
 ### DEBUG
 
-Activate debugging mode, which causes ClyphX Pro to log events as they occur to assist in [Troubleshooting](/troubleshooting).
+Activate debugging mode, which causes ClyphX Pro to log events as they occur to assist in [Troubleshooting](/manual/troubleshooting).
 
 ### DRAW
 
@@ -109,7 +109,7 @@ DRAW OFF
 
 ### DUMMY or D
 
-This Action does nothing. This is intended for use with [PSEQ Action Lists](/core-concepts#sequential-action-lists) as well as LSEQ and Default with Stop X-Clips.
+This Action does nothing. This is intended for use with [PSEQ Action Lists](/manual/core-concepts#sequential-action-lists) as well as LSEQ and Default with Stop X-Clips.
 
 ### FOLLOW
 
@@ -137,7 +137,7 @@ Toggle Global Quantization value between None and the last value.
 
 ### GQ `x`
 
-Adjust Global Quantization. This is an [Adjustable Property](/general-action-information/#adjustable-properties).
+Adjust Global Quantization. This is an [Adjustable Property](/manual/general-action-information/#adjustable-properties).
 
 ```
 GQ NONE
@@ -147,7 +147,7 @@ GQ >
 
 ### GRV `x`
 
-Adjust Global Groove Amount. This is a [Quasi Continuous Parameter](/general-action-information/#quasi-continuous-parameters).
+Adjust Global Groove Amount. This is a [Quasi Continuous Parameter](/manual/general-action-information/#quasi-continuous-parameters).
 
 ### INSAUDIO or INSMIDI
 
@@ -293,11 +293,11 @@ PIN, PIN ON, PIN OFF
 
 ### PSEQ RESET
 
-Reset all [PSEQ Action Lists](/core-concepts#sequential-action-lists) so that they start back at their beginning.
+Reset all [PSEQ Action Lists](/manual/core-concepts#sequential-action-lists) so that they start back at their beginning.
 
 ### PSEQ RESET `x`
 
-`x` is the [Identifier](/core-concepts#identifiers) of the PSEQ Action List to reset. 
+`x` is the [Identifier](/manual/core-concepts#identifiers) of the PSEQ Action List to reset. 
 
 ### REC
 
@@ -311,7 +311,7 @@ REC OFF
 
 ### REINIT
 
-Reinitialize all [Macros](/core-cocncepts#macros) and [Variables](/core-concepts#variables) to their initial states. This will cause the related files to be re-read allowing you to modify the files, trigger this Action and have the changes to the files immediately be applied.
+Reinitialize all [Macros](/manual/core-cocncepts#macros) and [Variables](/manual/core-concepts#variables) to their initial states. This will cause the related files to be re-read allowing you to modify the files, trigger this Action and have the changes to the files immediately be applied.
 
 ### RESTART
 
@@ -319,7 +319,7 @@ Restart Arrangement to Position 1.1.1.
 
 ### RQ
 
-Adjust Record Quantization. This is an [Adjustable Property](/general-action-information/#adjustable-properties). The names of the available Quantization value are: 
+Adjust Record Quantization. This is an [Adjustable Property](/manual/general-action-information/#adjustable-properties). The names of the available Quantization value are: 
 
 - `NONE`
 - `1/4`
@@ -374,7 +374,7 @@ Re-enable automation that has been overridden.
 
 ### SELP `x`
 
-Adjust the value of the selected parameter. This is a [Continuous Parameter](/general-action-information/#continuous-parameters).
+Adjust the value of the selected parameter. This is a [Continuous Parameter](/manual/general-action-information/#continuous-parameters).
 
 ```
 SELP 100
@@ -383,7 +383,7 @@ SELP >
 
 ### SETCONT
 
-Continue playback from the last stop point. This is only useful when triggered from an [X-Control](/core-concepts#x-controls) or [X-OSC](/core-concepts#x-osc).
+Continue playback from the last stop point. This is only useful when triggered from an [X-Control](/manual/core-concepts#x-controls) or [X-OSC](/manual/core-concepts#x-osc).
 
 ### SETJUMP `x`
 
@@ -426,7 +426,7 @@ Play the selection in Arrangement View if there is one.
 
 ### SETSTOP
 
-Stop playback. This will actually toggle playback state, so it can be used to start/stop playback when triggered from an [X-Control](/core-concepts#x-controls) or [X-OSC](/core-concepts#x-osc).
+Stop playback. This will actually toggle playback state, so it can be used to start/stop playback when triggered from an [X-Control](/manual/core-concepts#x-controls) or [X-OSC](/manual/core-concepts#x-osc).
 
 ### SIG `x`/`y`
 
@@ -467,7 +467,7 @@ Stop all Clips immediately (not quantized).
 
 ### SWING `x`
 
-Adjust the Swing amount (in the range of 0 - 100) to apply to Note Repeat(RPT). This is a [Quasi Continuous Parameter](/general-action-information/#quasi-continuous-parameters).
+Adjust the Swing amount (in the range of 0 - 100) to apply to Note Repeat(RPT). This is a [Quasi Continuous Parameter](/manual/general-action-information/#quasi-continuous-parameters).
 
 ### TAPBPM
 
@@ -489,7 +489,7 @@ Display the amount of time spent (in the format of hours:minutes:seconds) in Liv
 
 ### UNBIND
 
-_For use with the optional [ClyphX Pro Bindings Accessory](/optional-accessories/#clyphx-pro-bindings)._
+_For use with the optional [ClyphX Pro Bindings Accessory](/manual/optional-accessories/#clyphx-pro-bindings)._
 
 Unbind all bound controls (leaving them with no binding).
 

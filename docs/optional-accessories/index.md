@@ -1,6 +1,6 @@
 # Optional Accessories
 
-This section describes optional accessories that can be purchased for use with ClyphX Pro. All of these accessories can be purchased at [Isotonik Studios](https://isotonikstudios.com).
+This section describes optional accessories that can be purchased for use with ClyphX Pro. All of these accessories can be purchased at [Isotonik Studios](https://isotonikstudios.com/?post_type=product&s=clyphx+pro).
 
 ## ClyphX Pro Bindings
 

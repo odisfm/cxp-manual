@@ -83,7 +83,7 @@ BOUNDP RND
 
 ### BPM `x`
 
-Adjust Tempo. This is a Quasi Continuous parameter.
+Adjust Tempo. This is a [Quasi Continuous parameter](manual/general-action-information/#quasi-continuous-parameters).
 
 ```
 BPM 100, 

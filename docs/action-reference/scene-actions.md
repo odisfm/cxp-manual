@@ -8,6 +8,8 @@ The following Actions allow you to manipulate and Launch Scenes in various ways.
 
 In the case of the Launch-related Actions, these will not allow an X-Clip to Launch the Scene it resides on as that would cause a feedback loop. If you're using an X-Clip and need to Launch Clips on the same Scene as the X-Clip, you can use a [Track Action](/action-reference/track-actions) (like `ALL/PLAY`).
 
+___
+
 ### ADDSCENE
 
 Create a Scene below the selected Scene. [^1]

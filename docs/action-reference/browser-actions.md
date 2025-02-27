@@ -6,6 +6,8 @@ weight: 3
 
 The following Actions allow you to load items from Live's Browser and control hotswapping. In all cases, only items that exist in the root folders of the Browser (listed in the CATEGORIES section of the Browser) can be loaded/swapped. Also, when specifying the name of an item, the name should be exactly as it appears in the Browser.
 
+___
+
 ### INSERT `x`
 
 `x` is the type of Device insertion mode to use when loading Devices. The options are `LEFT` or `RIGHT` (load Devices to the left or right of the selected Device on the selected Track) or `DEFAULT` (load Devices at the end of the Device list on the selected Track.).

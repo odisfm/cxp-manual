@@ -6,6 +6,8 @@ weight: 2
 
 The following Actions allow you to navigate a Live Set and control views.
 
+___
+
 ### DEVFIRST or DEVLAST
 
 Move to the First or Last Device on the selected Track. 

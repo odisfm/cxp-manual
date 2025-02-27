@@ -26,12 +26,12 @@ The Actions in an Action List are performed sequentially (first Action performed
 etc), but the processing is nearly instantaneous, so it appears that all Actions in an Action List are
 performed at the same time.
 
-### Sequential action lists
-
 On a related note, Actions that apply to selected items (such as a Track) will apply to the item selected at
 the time the Action List was processed as opposed to items that become selected as part of the same
 Action List. If you'd like an Action List to select an item and then apply to the item that was selected,
 you can use the [WAIT](/action-reference/global-actions#wait-x) Action after the selection Action.
+
+### Sequential action lists
 
 It's also possible to step through an Action List and trigger each Action one at a time each time the
 Action List is triggered. To accomplish this, the Action List should be preceded by `(PSEQ)`. For

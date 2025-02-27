@@ -6,6 +6,8 @@ weight: 7
 
 The following Actions are [Track-based Actions](/manual/general-action-information/#track-based-actions) that allow you to control parameters, properties and functions of Simpler. The Device to apply these Actions to can be specified in the same way as described in [Device Actions](/action-reference/device-actions).
 
+---
+
 ### DEV SIMP BPM `x`
 
 Halve or double the Tempo of the Sample. 

@@ -6,6 +6,8 @@ weight: 5
 
 The following Actions are [Track-based Actions](/manual/general-action-information#track-based-actions) that allow you to control parameters, properties and functions of Tracks.
 
+---
+
 ### ADDCLIP
 
 Create a 1 Bar MIDI Clip in the selected Clip Slot on the Track.

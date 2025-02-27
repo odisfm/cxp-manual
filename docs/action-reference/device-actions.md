@@ -11,6 +11,7 @@ The following Actions are [Track-based Actions](/manual/general-action-informati
 
     When it comes to controlling parameters, if the parameter is mapped to a Macro, the parameter cannot be controlled. You should control the Macro instead.
 
+---
 
 ### DEV
 

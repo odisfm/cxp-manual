@@ -8,6 +8,8 @@ The following Actions allow you to send MIDI messages to the MIDI port selected 
 
 In all cases, the values used in these Actions should be entered in decimal (as opposed to hexadecimal).
 
+---
+
 ### MIDI `x`
 
 `x` is the MIDI message (of any type/length) to send.

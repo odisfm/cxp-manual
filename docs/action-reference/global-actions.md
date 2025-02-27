@@ -83,7 +83,7 @@ BOUNDP RND
 
 ### BPM `x`
 
-Adjust Tempo. This is a [Quasi Continuous parameter](manual/general-action-information/#quasi-continuous-parameters).
+Adjust Tempo. This is a [Quasi Continuous parameter](/manual/general-action-information/#quasi-continuous-parameters).
 
 ```
 BPM 100, 
@@ -111,7 +111,7 @@ DRAW OFF
 
 ### DUMMY or D
 
-This Action does nothing. This is intended for use with [PSEQ Action Lists](/manual/core-concepts#sequential-action-lists) as well as LSEQ and Default with Stop X-Clips.
+This Action does nothing. This is intended for use with [PSEQ Action Lists](/manual/core-concepts#sequential-action-lists) as well as [LSEQ](/manual/core-concepts/#lseq-or-rlseq) and [Default with Stop X-Clips](/manual/core-concepts/#default-with-stop).
 
 ### FOLLOW
 

@@ -2,11 +2,11 @@
 
 This section covers the initial installation steps you will need to complete in order to use ClyphX Pro.
 Please take your time when completing these steps. If you should run into trouble when performing
-any of these steps, please refer to the Troubleshooting section.
+any of these steps, please refer to the [Troubleshooting](/troubleshooting) section.
 
 ## Installing ClyphX Pro
 
-Please refer to ClyphX Pro Installation Guide.pdf for information on how to install ClyphX Pro. Once
+Please refer to `ClyphX Pro Installation Guide.pdf` for information on how to install ClyphX Pro. Once
 installation is complete, please launch Live to complete setup.
 
 !!! note
@@ -15,10 +15,11 @@ installation is complete, please launch Live to complete setup.
 ## Live Settings
 
 The following settings will be found in Live's Preferences on the Link, Tempo & MIDI tab.
+
 1. Select ClyphX Pro as a Control Surface.
 2. Leave the Input and Output set to None for now.
 
-**NOTE:** ClyphX should not be selected as a Control Surface when using ClyphX Pro.
+**NOTE:** ClyphX (the defunct precursor to ClyphX Pro) should not be selected as a Control Surface when using ClyphX Pro.
 
 ## Documentation
 

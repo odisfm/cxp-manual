@@ -431,3 +431,70 @@ SIG 4/4
 SIG 6/8
 ```
 
+## SREC
+
+Toggle, turn on or turn off Session Record.
+
+```
+SREC
+SREC ON
+SREC OFF
+```
+
+## SRECFIX `x`
+
+Trigger fixed-length Session Record on all armed Tracks where x is the length to record in Bars. Note, however, that Session Recording is always quantized according to Global Quantization and so your Global Quantization value needs to be less than or equal to the number of Bars to record for. For example, to record for 4 Bars, Global Quantization would need to be 4 Bars or less.
+
+```
+SRECFIX 4
+SRECFIX 16
+SRECFIX 0.5
+```
+
+## STOPALL
+
+Stop all Clips
+
+### STOPALL NQ
+
+Stop all Clips immediately (not quantized).
+
+## SWING `x`
+
+Adjust the Swing amount (in the range of 0 - 100) to apply to Note Repeat(RPT). This is a [Quasi Continuous Parameter](/general-action-information/#quasi-continuous-parameters).
+
+## TAPBPM
+
+Tap Tempo.
+
+## TFOLLOW
+
+Toggle, turn on or turn off Tempo Follower. 
+
+```
+TFOLLOW
+TFOLLOW ON
+TFOLLOW OFF
+```
+
+## TIME
+
+Display the amount of time spent (in the format of hours:minutes:seconds) in Live's Status Bar since the current Live Set was loaded.
+
+## UNBIND
+
+_For use with the optional [ClyphX Pro Bindings Accessory](/optional-accessories/#clyphx-pro-bindings)._
+
+Unbind all bound controls (leaving them with no binding).
+
+## UNDO or REDO 
+
+Undo or Redo.
+
+```
+UNDO
+REDO
+```
+
+## WAIT `x`
+

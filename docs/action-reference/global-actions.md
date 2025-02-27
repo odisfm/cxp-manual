@@ -1,3 +1,7 @@
+---
+weight: 0
+---
+
 # Global Actions
 
 The following Actions allow you to control Live Set-wide properties and functions as well as access internal ClyphX Pro features.

@@ -25,12 +25,12 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: blue
-      accent: green
+      accent: blue
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
   font:
-    text: Open Sans
+    text: Noto Sans
   icon:
     logo: /material/view-grid-outline
     repo: fontawesome/brands/github

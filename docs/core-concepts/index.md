@@ -26,10 +26,12 @@ The Actions in an Action List are performed sequentially (first Action performed
 etc), but the processing is nearly instantaneous, so it appears that all Actions in an Action List are
 performed at the same time.
 
+### Sequential action lists
+
 On a related note, Actions that apply to selected items (such as a Track) will apply to the item selected at
 the time the Action List was processed as opposed to items that become selected as part of the same
 Action List. If you'd like an Action List to select an item and then apply to the item that was selected,
-you can use the [WAIT](/action-reference/global-actions#WAIT) Action after the selection Action.
+you can use the [WAIT](/action-reference/global-actions#wait-x) Action after the selection Action.
 
 It's also possible to step through an Action List and trigger each Action one at a time each time the
 Action List is triggered. To accomplish this, the Action List should be preceded by `(PSEQ)`. For
@@ -39,7 +41,9 @@ In this example, the first time the Action List is triggered, Track 1 will be Ar
 
 You can alternatively use `(RPSEQ)` instead of `(PSEQ)` to step through the Action List randomly.
 
-In the rest of this document, we'll use CAPITAL LETTERS when referring to Action Lists. However, Action Lists are not case-sensitive. You can use capitalization that is comfortable for you. There is just one exception to this. Names specified within quotes are case-sensitive. So, for example, `"My Name"` is not the same as `"my name"`.
+
+!!! note
+    In the rest of this document, we'll use CAPITAL LETTERS when referring to Action Lists. However, Action Lists are not case-sensitive. You can use capitalization that is comfortable for you. There is just one exception to this. Names specified within quotes are case-sensitive. So, for example, `"My Name"` is not the same as `"my name"`.
 
 ## Identifiers
 

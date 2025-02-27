@@ -21,6 +21,9 @@ Allows you to bind buttons to parameters. These bindings are defined in `Button 
 
 ## ClyphX Pro G-Controls
 
+[Link to purchase](https://isotonikstudios.com/product/clyphx-pro-g-controls/).
+
+
 The ClyphX Pro G-Controls accessory adds a new type of [X-Trigger](/core-concepts#x-triggers) called G-Controls. G-Controls are similar to [X-Controls](/core-concepts#x-controls), but support enhanced gestures. In addition to an on (aka press) and off (aka release) gesture, G-Controls support a delayed press and can also differentiate between an immediate release and a delayed release. So, G-Controls support 5 gestures in total.
 
 In addition, G-Controls feature a repeat option. This allows you to trigger an [Action List](/core-concepts#action-lists) repeatedly while a button is pressed down.

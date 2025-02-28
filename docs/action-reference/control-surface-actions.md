@@ -4,8 +4,7 @@ weight: 18
 
 # Control Surface Actions
 
-The following Actions apply to Control Surface scripts that are selected in Live's Control Surface
-=section (in Preferences on the Link/MIDI tab) where `N` is the name or number of the script to operate on.
+The following Actions apply to Control Surface scripts that are selected in Live's Control Surface section (in Preferences on the Link/MIDI tab) where `N` is the name or number of the script to operate on.
 
 When specifying a script by number, the numbering is based on the number of Control Surface scripts that are selected. For example, if only two scripts are selected, the second script will be 2 even if the script is selected in Control Surface slot #6.
 

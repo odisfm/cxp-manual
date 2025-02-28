@@ -46,7 +46,7 @@ MIDI PC 1 0
 MIDI PC 16 10
 ```
 
-## routing options
+## Routing options
 
 The MIDI data that these Actions send can be used in a variety of ways via several routing options:
 

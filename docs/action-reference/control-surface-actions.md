@@ -107,6 +107,79 @@ CS 1 FULLVELO ON
 CS "Launchpad_Pro" FULLVELO OFF
 ```
 
+### CS `N` RING T`x` S`y`
+
+`x` is the name or number of the first Track outlined by the ring. `y` is the name or number of the first Scene outlined by the ring. Only one of these has to be specified so that you can change the Scene offset without changing the Track offset and vice versa. [^3]
+
+### CS `N` RING < or > / S< or >
+
+Move the ring Backward/Forward by increment of 1 Track and/or 1 Scene. Only one of these has to be specified so that you can increment Tracks without incrementing Scenes and vice versa. [^3]
+
+```
+CS 1 RING T1 S20
+CS "APC40" RING S"My Scene"
+CS 4 RING T5
+CS "Push" RING T"My Track" S100
+```
+
+### CS N RING T<`x` or >`x` / S<`x` or >`x`
+
+Same as above except `x` is the increment to use. [^3]
+
+```
+CS "APC40" RING T>4 S<8
+CS 1 RING T<2, CS 1 RING T>10
+```
+
+### CS `N` RING LAST
+
+Move the ring back to the position it was at prior to triggering one of the Ring Actions described above.
+
+```
+CS "APC40" RING LAST
+CS 1 RING LAST
+```
+
+### CS `N` RINGLINK `T` `S`
+
+Cause the script's ring to be linked to the selected Track and/or Scene.
+Only one of these has to be specified so that you can link to Tracks without linking to Scenes and vice versa. You can also specify `CENTER`, which will cause the ring to be centered around the selected
+Track and/or Scene. [^3]
+
+```
+CS "APC40" RINGLINK T S
+CS 1 RINGLINK T CENTER
+CS "Push" RINGLINK S
+```
+
+### CS `N` RINGLINK OFF
+
+Turn the script's ring linking off. [^3]
+
+```
+CS "APC40" RINGLINK OFF
+```
+
+### CS `N` RPT
+
+Toggle Note Repeat on/off. [^5]
+
+```
+CS 1 RPT
+```
+
+### CS `N` RPT `x`
+
+`x` is the Note Repeat rate to set. [^5]
+
+```
+CS 1 RPT OFF
+CS "MPD32" RPT 1/4
+CS 4 RPT 1/32T
+```
+
+
+
 [^1]: Requires that the script has Channel Strip controls (like Volume, Pan, Mute, etc).
 
 [^2]: Requires that the script has Device controls.

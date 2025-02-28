@@ -4,7 +4,7 @@ weight: 19
 
 # Push Actions
 
-The following Actions apply to the Push and Push2 Control Surface scripts. These all require that either Push or Push2 is selected as a Control Surface. By default, these Actions will apply to the last (or only)Push or Push2 Control Surface script selected in Live's Preferences. When working with more than one Push and/or Push2 Control Surface script, you can target them by specifying their number. For example:
+The following Actions apply to the Push and Push2 Control Surface scripts. These all require that either Push or Push2 is selected as a Control Surface. By default, these Actions will apply to the last (or only) Push or Push2 Control Surface script selected in Live's Preferences. When working with more than one Push and/or Push2 Control Surface script, you can target them by specifying their number. For example:
 
 `PUSH 1 MODE SESSION`
 

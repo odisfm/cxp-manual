@@ -9,7 +9,7 @@ weight: 5
 The process for updating to a new version of ClyphX Pro is the same as the process for installing ClyphX Pro. All of your settings will remain in place. However, if you have any User Actions that exist within the `user_actions` folder of ClyphX Pro, you will need to back these up before installing the new version of ClyphX Pro. You can use the procedure covered below for backing up.
 
 !!! note "Editor's note"
-    See my additions in the [User Actions article](/core-concepts/#user-actions) for details on the new way to deal with user actions and ClyphX upgrades.
+    See my additions in the [User Actions article](/manual/core-concepts/#user-actions) for details on the new way to deal with user actions and ClyphX upgrades.
 
 ## Backing Up Your ClyphX Pro Installation
 

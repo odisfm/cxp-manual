@@ -1,5 +1,7 @@
 ---
 weight: 6
+search:
+  boost: 2
 ---
 
 # Device Actions

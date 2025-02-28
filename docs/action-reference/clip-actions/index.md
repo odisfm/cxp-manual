@@ -1,6 +1,8 @@
 ---
 title: Clip Actions
 weight: 12
+search:
+  boost: 2
 ---
 
 # Clip Actions

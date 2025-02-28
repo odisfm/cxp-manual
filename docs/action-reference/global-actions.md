@@ -1,5 +1,7 @@
 ---
 weight: 0
+search:
+  boost: 2
 ---
 
 # Global Actions

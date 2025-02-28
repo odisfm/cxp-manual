@@ -372,6 +372,41 @@ SATM OFF
 
 Re-enable automation that has been overridden.
 
+### SCL
+
+Toggle, enable, or disable Live's Scale Mode
+
+```
+SCL
+SCL ON
+SCL OFF
+```
+
+### SCL ROOT `x`
+
+Set the root note of Live's Scale Mode to `x`. Sharps (`♯`) are allowed, flats (`b`) are not.
+
+```
+SCL ROOT C
+SCL ROOT F#
+```
+
+### SCL NAME `x`
+
+Set the scale of Live's Scale Mode. Allowed value of `x` is any of the scale names from the dropdown menu in Live's UI.
+
+!!! note
+    Capitalization is not important but spacing and punctuation are.
+    
+    Do not enclose the scale name in quotes.
+
+```
+SCL NAME MAJOR
+SCL NAME minor
+SCL NAME phrygian dominant
+SCL NAME half-whole dim.
+```
+
 ### SELP `x`
 
 Adjust the value of the selected parameter. This is a [Continuous Parameter](/manual/general-action-information/#continuous-parameters).

@@ -15,7 +15,7 @@ The navigation menu on the left lets you move between different sections of the 
 
 The table of contents on the right lets you quickly jump between headings on the current page.
 
-Both of these menus are "scrollable" if they are too big to fit on screen.
+Both of these menus are "scrollable" if they are too tall to fit on screen.
 
 ### On mobile
 

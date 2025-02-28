@@ -363,3 +363,7 @@ Adjust Clip Velocity Amount. This is a [Quasi Continuous Parameter](/manual/gene
 CLIP VELOCITY 50
 CLIP VELOCITY >
 ```
+
+### REALIGN
+
+Bring a Clip back into sync with the Set after manipulating its playing position.

@@ -8,13 +8,11 @@ theme:
     - navigation.instant
     - content.code.copy
     - navigation.tracking
-#    - navigation.tabs
     - navigation.sections
     - navigation.footer
     - navigation.header
     - navigation.indexes
     - navigation.top
-#    - toc.integrate
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"

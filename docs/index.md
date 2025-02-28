@@ -12,7 +12,7 @@
     If you encounter any mistakes or issues (including missing content or broken links) please [raise an issue on GitHub](https://github.com/odisfm/cxp-manual/issues).
 ___
 
-[Action Reference](/action-reference/global-actions){ .md-button .md-button--primary }
+[Action Reference](/action-reference){ .md-button .md-button--primary }
 
 [Manual](/manual/core-concepts){ .md-button .md-button--primary }
 

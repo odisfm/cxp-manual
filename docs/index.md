@@ -7,7 +7,7 @@
 
     cxpman.com is not associated with or endorsed by nativeKONTROL.
 
-    Efforts have been made to keep the content of this reproduction faithful to the original content, with only occasional notes to add context, and some formatting changes to fit the new medium.
+    Efforts have been made to keep the content of this reproduction faithful to the original, with only occasional notes to add context, and some formatting changes to fit the new medium.
 
     If you encounter any mistakes or issues (including missing content or broken links) please [raise an issue on GitHub](https://github.com/odisfm/cxp-manual/issues).
 ___

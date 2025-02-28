@@ -34,7 +34,7 @@ theme:
   font:
     text: Noto Sans
   icon:
-    logo: /material/help-circle
+    logo: /material/variable-box
     repo: fontawesome/brands/github
 
 plugins:

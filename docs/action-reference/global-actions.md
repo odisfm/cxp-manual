@@ -44,8 +44,6 @@ Create a Return Track at the end of the Return list.
 
 Back to Arrangement.
 
-### BIND
-
 ### BIND `i` `x`
 
 _For use with the optional [ClyphX Pro Bindings Accessory](/manual/optional-accessories/#clyphx-pro-bindings)._

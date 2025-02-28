@@ -1,5 +1,8 @@
 ---
 weight: 8
+hide:
+  - footer
+  - toc
 ---
 
 # Support

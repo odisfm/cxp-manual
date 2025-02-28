@@ -80,7 +80,7 @@ COLOR >
 
 ### COPYCLIP 
 
-Copy the Clip playing on the Track for use with the [PASTECLIP](#pasteclip) Action.
+Copy the Clip playing on the Track for use with the [PASTECLIP](#pasteclip-x) Action.
 
 ### COPYCLIP `x`
 

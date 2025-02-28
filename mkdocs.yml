@@ -41,6 +41,7 @@ plugins:
   - search
   - awesome-nav
   - meta
+  - open-in-new-tab
 #  - social
   - mkdocs-nav-weight:
       section_renamed: false

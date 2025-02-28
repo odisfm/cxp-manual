@@ -42,7 +42,7 @@ plugins:
   - search
   - awesome-nav
   - meta
-  - social
+#  - social
   - mkdocs-nav-weight:
       section_renamed: false
       index_weight: -10

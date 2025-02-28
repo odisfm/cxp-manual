@@ -191,4 +191,4 @@ CS 4 RPT 1/32T
 
     OFF, 1/4D, 1/4, 1/4T, 1/8D, 1/8, 1/8T, 1/16D, 1/16, 1/16T, 1/32D, 1/32, 1/32T, 1/64D, 1/64, 1/64T (where 'D' stands for dotted and 'T' stands for triplet). 
 
-    Swing can also be applied by using the [SWING](/action-reference/global-actions#swing-x) Actions covered in [Global Actions](/action-reference/global-actions).
+    Swing can also be applied by using the [SWING](/action-reference/global-actions#swing-x) Actions covered in [Global Actions](/action-reference/global-actions#swing-x).

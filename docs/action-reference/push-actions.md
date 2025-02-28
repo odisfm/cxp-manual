@@ -73,7 +73,9 @@ Rack.
 
 ### PUSH SCL
 
-This Action is only accessible to [X-Clips](/manual/core-concepts/#x-clips) and [X-Scenes](manual/core-concepts/#x-scenes) and should not be combined with other Actions. This will capture the current Scale settings and store them in the X-Clip/X-Scene. Once settings have been stored, you can then add other Actions if you like or copy the stored settings and paste them into the Action List of other [X-Trigger types](/manual/core-concepts/#x-triggers).
+This Action is only accessible to [X-Clips](/manual/core-concepts/#x-clips) and [X-Scenes](manual/core-concepts/#x-scenes) and should not be combined with other Actions. This will capture the current Scale settings and store them in the X-Clip/X-Scene. 
+
+Once settings have been stored, you can then add other Actions if you like or copy the stored settings and paste them into the Action List of other [X-Trigger types](/manual/core-concepts/#x-triggers).
 
 
 ### PUSH SCL FIXED

@@ -57,7 +57,7 @@ BIND MY_BUTTON SELP
 BIND MY_KNOB SEL/VOL
 ```
 
-### BIND `i` `<x` or `>x` 
+### BIND `i` <`x` or >`x` 
 
 _For use with the optional [ClyphX Pro Bindings Accessory](/manual/optional-accessories/#clyphx-pro-bindings)._
 
@@ -168,7 +168,7 @@ INSMIDI
 LOC "Verse 1"
 ```
 
-### LOC `<` or `>`
+### LOC < or >
 
 Jump to the Prev/Next Arrangement Locator.
 
@@ -204,7 +204,7 @@ LOOP *0.5
 LOOP *2
 ```
 
-### LOOP `<` or `>`
+### LOOP < or >
 
 Move the Arrangement Loop Backward/Forward by its length.
 
@@ -431,7 +431,7 @@ Bars.Beats.Sixteenths.
 SETJUMP 8.1.1
 ```
 
-### SETJUMP `<` or `>`
+### SETJUMP < or >
 
 Jump the Arrangement's Playback Position Backward/Forward by 1 Beat.
 
@@ -439,7 +439,7 @@ Jump the Arrangement's Playback Position Backward/Forward by 1 Beat.
 SETJUMP <, SETJUMP >
 ```
 
-### SETJUMP `<x` or `>x`
+### SETJUMP <`x` or >`x`
 
 Jump the Arrangement's Playback Position Backward/Forward by `x` Beats (specify `B` for Bars).
 

@@ -83,7 +83,7 @@ CLIP NOTES GATE >8
 
 Invert the pitches of Notes.
 
-### CLIP NOTES NUDGE `<` or `>`
+### CLIP NOTES NUDGE < or >
 
 Nudge Notes Backward/Forward by one 128th Note.
 

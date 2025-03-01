@@ -15,3 +15,7 @@ When using controllers with ClyphX Pro, you can keep other settings for your con
 In addition, if the **Remote** switch is turned on for the controller, make sure that MIDI mappings in your Live Set do not use the same MIDI messages you’ve configured for the controller in ClyphX Pro.
 
 Lastly, if the **Track** switch is turned on for the controller, the MIDI messages you’ve configured for the controller in ClyphX Pro cannot be used for recording data into MIDI Clips or for playing instruments.
+
+!!! note "See also"
+
+    [Augmenting ClyphX Pro](/additional-resources#augmenting-clyphx-pro)

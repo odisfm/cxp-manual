@@ -110,7 +110,7 @@ CS "Launchpad_Pro" FULLVELO OFF
 
 `x` is the name or number of the first Track outlined by the ring. `y` is the name or number of the first Scene outlined by the ring. Only one of these has to be specified so that you can change the Scene offset without changing the Track offset and vice versa. [^3]
 
-### CS `N` RING < or > / S< or >
+### CS `N` RING T< or > / S< or >
 
 Move the ring Backward/Forward by increment of 1 Track and/or 1 Scene. Only one of these has to be specified so that you can increment Tracks without incrementing Scenes and vice versa. [^3]
 

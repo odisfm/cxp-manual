@@ -19,7 +19,8 @@ Except where noted, these Actions will work with most of the Control Surface scr
 Apply a Track-based Action to Channel Strip number `x`. [^1]
 
 ```
-CS 1 1/MUTE, CS "APC40" 4/DEV RND
+CS 1 1/MUTE
+CS "APC40" 4/DEV RND
 CS 3 8/CLIP SEMI >
 ```
 
@@ -28,7 +29,8 @@ CS 3 8/CLIP SEMI >
 Apply a [Track-based Action](/manual/general-action-information/#track-based-actions) to a range of Channel Strips. You can use a [range specification](/manual/general-action-information/#applying-actions-to-specific-objects-and-ranges), but should strictly use Channel Strip numbers or ALL when specifying the range. [^1]
 
 ```
-CS 1 1-4/FOLD, CS "Push" 4, 8/DEV
+CS 1 1-4/FOLD
+CS "Push" 4, 8/DEV
 CS 3 ALL/CLIP START >
 ```
 

@@ -42,9 +42,9 @@ Excellent, up-to-date video series that explains many of the concepts in this ma
 
 ### OSC Output from ClyphX Pro
 
-[Forum thread](https://nativekontrol.proboards.com/thread/3562/adding-shift-functionality-controls-oscs)
+[Forum thread](https://nativekontrol.proboards.com/thread/3620/beta-osc-output-clyphx-pro)
 
-[Archived copy]()
+[Archived copy](http://archive.today/Lry6F)
 
 
 ### Creating User Actions

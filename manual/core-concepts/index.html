@@ -1,0 +1,2058 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://cxpman.com/manual/core-concepts/">
+      
+      
+        <link rel="prev" href="../setup/">
+      
+      
+        <link rel="next" href="../general-action-information/">
+      
+      
+      <link rel="icon" href="../../favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Core Concepts - ClyphX Pro manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="../../assets/external/fonts.googleapis.com/css.5c146275.css">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#core-concepts" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ClyphX Pro manual" class="md-header__button md-logo" aria-label="ClyphX Pro manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2M7.4 18C5.9 16.5 5 14.3 5 12s.9-4.5 2.4-6l1.6.7C7.7 7.9 7 9.9 7 12s.7 4.1 2 5.3zm5.3-3-.8-2-1.4 2H9l2.3-3.1L10 9h1.3l.8 2 1.4-2H15l-2.2 3 1.3 3zm3.9 3-1.6-.7c1.3-1.3 2-3.2 2-5.3s-.7-4.1-2-5.3l1.6-.7c1.5 1.5 2.4 3.7 2.4 6s-.9 4.5-2.4 6"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ClyphX Pro manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Core Concepts
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ClyphX Pro manual" class="md-nav__button md-logo" aria-label="ClyphX Pro manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2M7.4 18C5.9 16.5 5 14.3 5 12s.9-4.5 2.4-6l1.6.7C7.7 7.9 7 9.9 7 12s.7 4.1 2 5.3zm5.3-3-.8-2-1.4 2H9l2.3-3.1L10 9h1.3l.8 2 1.4-2H15l-2.2 3 1.3 3zm3.9 3-1.6-.7c1.3-1.3 2-3.2 2-5.3s-.7-4.1-2-5.3l1.6-.7c1.5 1.5 2.4 3.7 2.4 6s-.9 4.5-2.4 6"/></svg>
+
+    </a>
+    ClyphX Pro manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://isotonikstudios.com/product/clyphx-pro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Buy ClyphX Pro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additional-resources" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Additional Resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Manual
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Manual
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Core Concepts
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Core Concepts
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#action-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Action Lists
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Action Lists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sequential-action-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sequential action lists
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifiers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#x-triggers" class="md-nav__link">
+    <span class="md-ellipsis">
+      X-Triggers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="X-Triggers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#startup-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Startup Actions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-cues" class="md-nav__link">
+    <span class="md-ellipsis">
+      X-Cues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      X-Clips
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-scenes" class="md-nav__link">
+    <span class="md-ellipsis">
+      X-Scenes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      X-Controls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-osc" class="md-nav__link">
+    <span class="md-ellipsis">
+      X-OSC
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xt-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      XT Scripts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#max-for-live" class="md-nav__link">
+    <span class="md-ellipsis">
+      Max for Live
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settings-foldersfiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Settings Folders/Files
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#script-linking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Script Linking
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Macros
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Macros">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defining-macros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining macros
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defining-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-python-expressions-in-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Python expressions in variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#built-in-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Built-in variables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      User actions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../general-action-information/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    General Action Information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../addendum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Addendum
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-midi-controllers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Using MIDI Controllers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../updating-and-backing-up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Updating and Backing up
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../optional-accessories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Optional Accessories
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macrobat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Macrobat
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Support
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../action-reference/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Action Reference
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Action Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../action-reference/global-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Global Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../action-reference/scene-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Scene Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../action-reference/nav-view-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigation and View Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../action-reference/browser-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Browser Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../action-reference/midi-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MIDI Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../action-reference/track-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Track Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../action-reference/device-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Device Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../action-reference/simpler-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Simpler Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../action-reference/device-chain-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Device Chain Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../action-reference/drum-pad-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Drum Pad Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../action-reference/snap-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Snap Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../action-reference/snap-legacy-action/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Snap Legacy Action
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_14" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../action-reference/clip-actions/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Clip actions
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_14" id="__nav_5_14_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_14">
+            <span class="md-nav__icon md-icon"></span>
+            Clip actions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../action-reference/clip-actions/clip-loop-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clip Loop Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../action-reference/clip-actions/clip-cue-action/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clip Cue Action
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../action-reference/clip-actions/clip-envelope-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clip Envelope Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../action-reference/clip-actions/clip-envelope-capture-action/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clip Envelope Capture Action
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../action-reference/clip-actions/clip-note-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clip Note Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../action-reference/control-surface-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Control Surface Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../action-reference/push-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Push Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../action-reference/crossfire-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CrossFire Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../action-reference/arsenal-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arsenal Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../action-reference/ddc-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DDC Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#action-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Action Lists
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Action Lists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sequential-action-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sequential action lists
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifiers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#x-triggers" class="md-nav__link">
+    <span class="md-ellipsis">
+      X-Triggers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="X-Triggers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#startup-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Startup Actions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-cues" class="md-nav__link">
+    <span class="md-ellipsis">
+      X-Cues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      X-Clips
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-scenes" class="md-nav__link">
+    <span class="md-ellipsis">
+      X-Scenes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      X-Controls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-osc" class="md-nav__link">
+    <span class="md-ellipsis">
+      X-OSC
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xt-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      XT Scripts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#max-for-live" class="md-nav__link">
+    <span class="md-ellipsis">
+      Max for Live
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settings-foldersfiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Settings Folders/Files
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#script-linking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Script Linking
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Macros
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Macros">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defining-macros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining macros
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defining-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-python-expressions-in-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Python expressions in variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#built-in-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Built-in variables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      User actions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="core-concepts">Core Concepts<a class="headerlink" href="#core-concepts" title="Permanent link">&para;</a></h1>
+<p>ClyphX Pro is a deceptively simple scripting language for music producers and performers who use
+Ableton Live that allows for easy control and manipulation of virtually every aspect of a Live Set in
+highly useful and interesting ways.</p>
+<p>At the heart of ClyphX Pro is its extensive list of Actions. Actions produce changes in Live and are
+associated with simple words or phrases. For examples, <code>BPM 100</code> will set the Tempo of the Set to 100
+and <code>LOADDEV "Auto Filter"</code> will load Auto Filter onto the selected Track. Actions are specified in Action Lists, which are described below.</p>
+<p>Action Lists are triggered by X-Triggers, which are events (such as a Clip being launched or a button on
+a controller being pressed) that occur in Live. So, the basic idea here is that you'll use X-Triggers to
+trigger Action Lists, which are comprised of Actions.</p>
+<p>ClyphX Pro also includes a component called Macrobat that adds new functionality to Racks. This
+component is covered in its own manual, which is provided along with ClyphX Pro.</p>
+<h2 id="action-lists">Action Lists<a class="headerlink" href="#action-lists" title="Permanent link">&para;</a></h2>
+<p>An Action List is comprised of one or more <a href="/action-reference/global-actions">Actions</a>. As an example, a simple Action List might toggle Session Record: <code>SREC</code>. A more complex Action List might mute Tracks 1 and 4, arm Track 2 and turn on the first Device on Track 2: <code>1, 4/MUTE ON ; 2/ARM ON ; 2/DEV(1) ON</code></p>
+<p>When specifying an Action List, each Action should be separated by a semicolon ( <code>;</code> ) as shown in the
+second example above.</p>
+<p>The Actions in an Action List are performed sequentially (first Action performed, then second Action,
+etc), but the processing is nearly instantaneous, so it appears that all Actions in an Action List are
+performed at the same time.</p>
+<p>On a related note, Actions that apply to selected items (such as a Track) will apply to the item selected at
+the time the Action List was processed as opposed to items that become selected as part of the same
+Action List. If you'd like an Action List to select an item and then apply to the item that was selected,
+you can use the <a href="/action-reference/global-actions#wait-x">WAIT</a> Action after the selection Action.</p>
+<h3 id="sequential-action-lists">Sequential action lists<a class="headerlink" href="#sequential-action-lists" title="Permanent link">&para;</a></h3>
+<p>It's also possible to step through an Action List and trigger each Action one at a time each time the
+Action List is triggered. To accomplish this, the Action List should be preceded by <code>(PSEQ)</code>. For
+example: <code>(PSEQ) 1/ARM ; 2/ARM ; 3/ARM</code>.</p>
+<p>In this example, the first time the Action List is triggered, Track 1 will be Armed. The second time, Track 2 will be Armed. The third time, Track 3 will be Armed. The fourth time, it will wrap back around to be beginning and Track 1 will be disarmed.</p>
+<p>You can alternatively use <code>(RPSEQ)</code> instead of <code>(PSEQ)</code> to step through the Action List randomly.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In the rest of this document, we'll use CAPITAL LETTERS when referring to Action Lists. However, Action Lists are not case-sensitive. You can use capitalization that is comfortable for you. There is just one exception to this. Names specified within quotes are case-sensitive. So, for example, <code>"My Name"</code> is not the same as <code>"my name"</code>.</p>
+</div>
+<h2 id="identifiers">Identifiers<a class="headerlink" href="#identifiers" title="Permanent link">&para;</a></h2>
+<p>Some of the X-Triggers (described below) require an Identifier at the beginning of their name before their Action List. For example, in the case of X-Clips (described below), the Identifier is what distinguishes an X-Clip from a regular Clip. An Identifier is any word or phrase enclosed in square brackets. As an example:</p>
+<p><code>[THIS IS AN IDENTIFIER]</code></p>
+<h2 id="x-triggers">X-Triggers<a class="headerlink" href="#x-triggers" title="Permanent link">&para;</a></h2>
+<p>X-Triggers are events that occur in Live that can, in turn, trigger <a href="#action-lists">Action Lists</a>. There are currently six types of X-Triggers.</p>
+<h3 id="startup-actions">Startup Actions<a class="headerlink" href="#startup-actions" title="Permanent link">&para;</a></h3>
+<p>This is an event that occurs each time a Live Set is loaded. The <a href="#action-lists">Action List</a> it should trigger is specified in Preferences.txt.</p>
+<h3 id="x-cues">X-Cues<a class="headerlink" href="#x-cues" title="Permanent link">&para;</a></h3>
+<p>An X-Cue is any Locator in Arrangement View that includes an <a href="#identifiers">Identifier</a> and an <a href="#action-lists">Action List</a>. An X-Cue will trigger its Action List when the playhead crosses over the X-Cue. Its Action List will not be triggered when the X-Cue to jumped to, only when the playhead crosses over it.</p>
+<h3 id="x-clips">X-Clips<a class="headerlink" href="#x-clips" title="Permanent link">&para;</a></h3>
+<p>An X-Clip is any Clip in Session View that includes an <a href="#identifiers">Identifier</a> and an <a href="#action-lists">Action List</a>.</p>
+<h4 id="default">Default<a class="headerlink" href="#default" title="Permanent link">&para;</a></h4>
+<p><code>[IDENT] 3/CLIP SEMI &gt; ; 3/CLIP CENT -25</code></p>
+<p>This X-Clip will trigger its Action List when the X-Clip starts playing (not when it's launched). This way, its Action List can be quantized via Global or Launch Quantization.</p>
+<h4 id="default-with-stop">Default with Stop<a class="headerlink" href="#default-with-stop" title="Permanent link">&para;</a></h4>
+<p><code>[IDENT] REC ON ; 1-2/ARM : UNARM ; REC OFF</code></p>
+<p>This X-Clip has two Action Lists, that are separated by a colon ( <code>:</code> ). The first Action List will be triggered when the X-Clip is played. The second Action List will be triggered when the X-Clip stops playing. To trigger the same Action List for play and stop, specify an asterisk ( <code>*</code> ) for the second Action List (for example <code>[IDENT] MUTE : *</code>).</p>
+<h4 id="lseq-or-rlseq">LSEQ or RLSEQ<a class="headerlink" href="#lseq-or-rlseq" title="Permanent link">&para;</a></h4>
+<p><code>[IDENT] (LSEQ) 1/CLIP(2) CUE &gt;1 ; 1/MUTE</code></p>
+<p>This X-Clip works similar to a <code>PSEQ</code> Action List except it will step through and trigger the Actions in its Action List one at a time each time the X-Clip Loops. You can alternatively use (<code>RLSEQ</code>) instead of (<code>LSEQ</code>) to step through the Action List randomly.</p>
+<div class="admonition note">
+<p class="admonition-title">X-Clip notes</p>
+<ul>
+<li>An X-Clip’s <a href="#action-lists">Action List</a> will not be triggered while the X-Clip is recording.</li>
+<li>If a Clip-related Action is triggered from the X-Clip that it’s applied to, this could cause the Action to be triggered repeatedly. In general, it’s recommended that you do not trigger Clip-related Actions from the X-Clip that the Actions will be applied to.</li>
+<li>Selection and navigation-related Actions may not work correctly when triggered from an X-Clip if 'Select on Launch' is turned on in your Live Preferences.</li>
+</ul>
+</div>
+<h3 id="x-scenes">X-Scenes<a class="headerlink" href="#x-scenes" title="Permanent link">&para;</a></h3>
+<p>An X-Scene is any Scene in Session View that includes an <a href="#identifiers">Identifier</a> and an <a href="#action-lists">Action List</a>. An X-Scene will trigger its Action List upon the X-Scene being triggered.</p>
+<h3 id="x-controls">X-Controls<a class="headerlink" href="#x-controls" title="Permanent link">&para;</a></h3>
+<p>An X-Control is a control on a MIDI controller. An X-Control will trigger its <a href="#action-lists">Action List</a> upon the control sending an on message (a MIDI message with a value that is 34 or higher). It can optionally trigger a second Action List upon the control sending an off message (a MIDI message with a value of 32 or less). The on value threshold can be changed in Preferences.txt. You'll define controls on your controller to use as X-Controls in X-Controls.txt. Please refer to Using MIDI Controllers for information on how to set up MIDI controller(s) to use with ClyphX Pro.</p>
+<h3 id="x-osc">X-OSC<a class="headerlink" href="#x-osc" title="Permanent link">&para;</a></h3>
+<p>An X-OSC is an OSC address. An X-OSC will trigger its <a href="#action-lists">Action List</a> upon receiving an on value (a value that is not 0). It can optionally trigger a second Action List upon receiving an off value (a value of 0).</p>
+<p>You'll define OSC addresses to use as X-OSCs in X-OSC.txt. By default, ClyphX Pro will receive OSC messages on port 7005. If need be, you can change this in Preferences.txt. In either case, the port your OSC addresses are sent on and the port that ClyphX Pro receives from need to be the same.</p>
+<h2 id="xt-scripts">XT Scripts<a class="headerlink" href="#xt-scripts" title="Permanent link">&para;</a></h2>
+<p>Upon <a href="/manual/setup/#installing-clyphx-pro">installing ClyphX Pro</a>, five additional Control Surface scripts (ClyphX_Pro_XTA – ClyphX_Pro_XTE) will be installed. XT Scripts allow you to use the controls on additional MIDI
+controllers and also use the Midi Actions to send MIDI messages to the MIDI port selected as the
+Output of each XT Script.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>XT Scripts <strong>must</strong> be selected in Control Surface slots <strong>beneath</strong> ClyphX Pro in order for them to properly connect to ClyphX Pro.</p>
+</div>
+<h2 id="max-for-live">Max for Live<a class="headerlink" href="#max-for-live" title="Permanent link">&para;</a></h2>
+<p>In addition to <a href="#x-triggers">X-Triggers</a> and <a href="#xt-scripts">XT Scripts</a>, it's also possible to trigger ClyphX Pro Actions from Max for Live. The <a href="/manual/setup/#documentation">ClyphX Pro Live Lessons</a> include a Max for Live Integration Lesson and an example Max for Live Device that demonstrates how this works. Additionally, the Triggering Actions via Notes in a Clip Lesson provides a Max for Live Device that allows ClyphX Pro Actions to be triggered via Notes in MIDI Clips.</p>
+<h2 id="settings-foldersfiles">Settings Folders/Files<a class="headerlink" href="#settings-foldersfiles" title="Permanent link">&para;</a></h2>
+<p>ClyphX Pro includes a variety of optional settings files that can be found within its settings folder. This folder will be created upon selecting ClyphX Pro or one of the <a href="#xt-scripts">XT Scripts</a> as a Control Surface in Live. You can find this folder (named <code>ClyphX_Pro</code>) in the <code>nativeKONTROL</code> directory within your User directory. This folder will contain the following files:</p>
+<ul>
+<li><strong>Macros.txt</strong> - contains <a href="#macros">Macro</a> definitions</li>
+<li><strong>MIDI Rack-SysEx.txt</strong> - contains SysEx messages for use with the Macrobat MIDI Rack</li>
+<li><strong>Preferences.txt</strong> - contains general preference settings</li>
+<li><strong>Script Linking.txt</strong> - contains settings related to <a href="#script-linking">Script Linking</a></li>
+<li><strong>Variables.txt</strong> - contains <a href="#variables">Variable</a> definitions</li>
+<li><strong>X-Controls.txt</strong> -  contains <a href="#x-controls">X-Control</a> definitions</li>
+<li><strong>X-OSC.txt</strong> - contains <a href="#x-osc">X-OSC</a> definitions</li>
+</ul>
+<h2 id="script-linking">Script Linking<a class="headerlink" href="#script-linking" title="Permanent link">&para;</a></h2>
+<p>ClyphX Pro allows you to link up to 6 Control Surface scripts together so that they will control groups of Tracks and/or Scene relative to each other. In order for a script to be linked, it needs to include a linkable component. Many of the scripts built into Live (such as Push or APC40) include such a component. In general, if a script has an associated colored border (with a fixed size) that surrounds the Tracks and Scenes it’s controlling, it can be linked.</p>
+<p>Script Linking-related settings can be made in <code>Script Linking.txt</code>.</p>
+<h2 id="macros">Macros<a class="headerlink" href="#macros" title="Permanent link">&para;</a></h2>
+<p>Macros are <a href="#action-lists">Action Lists</a> that are associated with user-specified names. Here is an example of a Macro:</p>
+<p><code>$MY_MACRO$ = 1, 4/MUTE ON ; 2/ARM ON ; 2/DEV(1) ON</code></p>
+<p>To trigger a Macro from an <a href="#x-triggers">X-Trigger</a>, you simply have to specify its name:</p>
+<p><code>$MY_MACRO$</code></p>
+<p>Macros are useful in the case of <a href="#x-clips">X-Clips</a>, <a href="#x-cues">X-Cues</a> and <a href="#x-scenes">X-Scenes</a> as Macros allow you to trigger long Action Lists via the short names you specified for them, and thus you don't need to have X-Clips, X-Cues and X-Scenes with really long names that are difficult to edit.</p>
+<p>Macros are also useful in the case of <a href="#x-controls">X-Controls</a> and <a href="#x-osc">X-OSCs</a> since Macros can be reassigned on the fly. So, you can assign a Macro to an X-Control or X-OSC and then reassign the Macro at will and thus change the Actions the X-Control or X-OSC triggers.</p>
+<h3 id="defining-macros">Defining macros<a class="headerlink" href="#defining-macros" title="Permanent link">&para;</a></h3>
+<p><strong>There are two ways to define Macros:</strong></p>
+<ul>
+<li>You can define Macros in <code>Macros.txt</code>. Macros you define here will always be available in any Live Set.</li>
+<li>You can define Macros and reassign existing Macros from within Action Lists. Macros defined this way are temporary (only accessible to the current Live Set). Note, however, that Macro definitions/reassignments cannot be combined with other Actions. They should be the only Action in an Action List. The reason for this is that Macros <em>are</em> Action Lists themselves.</li>
+</ul>
+<p>In both cases, the syntax is as shown in the example above. Also, as shown in the examples above, when defining, reassigning or using Macros, the Macro's name always needs to be enclosed in dollar signs ( <code>$</code> ).</p>
+<h2 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Advanced</p>
+<p>This is an advanced concept that is really only useful in very rare circumstances. If you're not already familiar with the concept of Variables in other programming scenarios, you can safely skip this section.</p>
+</div>
+<p>Variables are values of some sort that are associated with user-specified names, which can be used in your <a href="#action-lists">Action Lists</a>. Here is an example of a Variable:</p>
+<p><code>%MY_VARIABLE% = 10</code></p>
+<p>To use a Variable in an Action List, you simply have to specify its name:</p>
+<p><code>%MY_VARIABLE%/MUTE</code></p>
+<h3 id="defining-variables">Defining variables<a class="headerlink" href="#defining-variables" title="Permanent link">&para;</a></h3>
+<p><strong>There are two ways to define Variables:</strong></p>
+<ul>
+<li>
+<p>You can define Variables in Variables.txt. Variables you define here will always be available to any Action List in any Live Set.</p>
+</li>
+<li>
+<p>You can define Variables and reassign existing Variables from within Action Lists (but not from within <a href="#macros">Macros</a>). Variables defined/assigned this way are temporary (only accessible to the current Live Set). Also, Variables defined/assigned this way can only be assigned once within an Action List.</p>
+</li>
+</ul>
+<p>In both cases, the syntax is as shown in the example above. Also, as shown in the examples above, when defining, reassigning or using Variables, the Variable's name always needs to be enclosed in percent signs ( <code>%</code> ).</p>
+<h3 id="using-python-expressions-in-variables">Using Python expressions in variables<a class="headerlink" href="#using-python-expressions-in-variables" title="Permanent link">&para;</a></h3>
+<p>As far as values, Variables can be assigned to virtually any value or to any valid Python expression, but the value cannot include a semicolon ( <code>;</code> ). Also, Variables can access properties of a Live Set through an attribute named <code>song</code>. This attribute provides access to the majority of Live's API. For example, through it, you can access the name of the selected Track like so:</p>
+<p><code>%MY_VARIABLE% = song.view.selected_track.name</code></p>
+<p>To learn more about what you can access through song, see the <a href="https://docs.cycling74.com/apiref/lom/">LOM documentation</a>, which covers a subset of the API (known as the LOM). Note, however, API paths and LOM paths are slightly different. This example demonstrates how to transpose LOM paths to API paths:</p>
+<p><strong>LOM:</strong> <code>live_set tracks 4 clip_slots 6</code></p>
+<p><strong>API:</strong> <code>song.tracks[4].clip_slots[6]</code></p>
+<h3 id="built-in-variables">Built-in variables<a class="headerlink" href="#built-in-variables" title="Permanent link">&para;</a></h3>
+<p>In addition to Variables you define, you also have access to built-in Variables. The following builtin
+Variables are available:</p>
+<ul>
+<li><code>BPM</code> - the current Tempo of the Live Set in BPMs</li>
+<li><code>RND</code> - a random integer in the range of 0 – 100000</li>
+<li><code>RNDx-y</code> - a random integer in the range of <code>x</code> – <code>y</code></li>
+<li><code>TIME</code> - the current date and time in the format of year-month-day hour:minute:second</li>
+</ul>
+<h2 id="user-actions">User actions<a class="headerlink" href="#user-actions" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Advanced</p>
+<p>This is an advanced concept that is really only useful to Python programmers. If you're not already familiar with Python, you can safely skip this section.</p>
+</div>
+<p>In addition to all of the <a href="/action-reference">Actions</a> you can access with ClyphX Pro, you can also create your own User Actions that function just like built-in Actions. User Actions are created in the ClyphX_Pro folder within your User Library. The exact location within the folder is <code>ClyphX_Pro/clyphx_pro/user_actions</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Editor's Note</p>
+<p>An update to ClyphX Pro allows for another user actions folder. The location of this folder is <code>User Library/Remote Scripts/_user_actions</code>. </p>
+<p>Using this new folder prevents the accidental deletion of your user actions when upgrading ClyphX.</p>
+</div>
+<p>In that location, you'll find a file name <code>ExampleActions.py</code> that includes instructions and examples on how to create User Actions. Although it is possible to edit/view this file with any text editor, it is recommended that you use an IDE when creating User Actions.</p>
+<div class="admonition note">
+<p class="admonition-title">Editor's Note</p>
+<p>Since the release of ClyphX Pro, creator Stray released further materials explaining user actions.</p>
+<ul>
+<li><a href="https://nativekontrol.proboards.com/thread/3022/tip-creating-user-actions">Tutorial (nativeKontrol forums</a></li>
+<li><a href="https://archive.is/uZw3O">Tutorial (archived link)</a></li>
+<li><a href="https://www.youtube.com/watch?v=tVUt4rByPU4&amp;t=0s">Video version (YouTube)</a></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../setup/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Setup">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Setup
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../general-action-information/" class="md-footer__link md-footer__link--next" aria-label="Next: General Action Information">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                General Action Information
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "content.code.copy", "navigation.tracking", "navigation.sections", "navigation.footer", "navigation.header", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="../../js/open_in_new_tab.js"></script>
+      
+    
+  </body>
+</html>

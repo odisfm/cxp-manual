@@ -1,0 +1,2701 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://cxpman.com/action-reference/track-actions/">
+      
+      
+        <link rel="prev" href="../midi-actions/">
+      
+      
+        <link rel="next" href="../device-actions/">
+      
+      
+      <link rel="icon" href="../../favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Track Actions - ClyphX Pro manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="../../assets/external/fonts.googleapis.com/css.5c146275.css">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#track-actions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ClyphX Pro manual" class="md-header__button md-logo" aria-label="ClyphX Pro manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2M7.4 18C5.9 16.5 5 14.3 5 12s.9-4.5 2.4-6l1.6.7C7.7 7.9 7 9.9 7 12s.7 4.1 2 5.3zm5.3-3-.8-2-1.4 2H9l2.3-3.1L10 9h1.3l.8 2 1.4-2H15l-2.2 3 1.3 3zm3.9 3-1.6-.7c1.3-1.3 2-3.2 2-5.3s-.7-4.1-2-5.3l1.6-.7c1.5 1.5 2.4 3.7 2.4 6s-.9 4.5-2.4 6"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ClyphX Pro manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Track Actions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ClyphX Pro manual" class="md-nav__button md-logo" aria-label="ClyphX Pro manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2M7.4 18C5.9 16.5 5 14.3 5 12s.9-4.5 2.4-6l1.6.7C7.7 7.9 7 9.9 7 12s.7 4.1 2 5.3zm5.3-3-.8-2-1.4 2H9l2.3-3.1L10 9h1.3l.8 2 1.4-2H15l-2.2 3 1.3 3zm3.9 3-1.6-.7c1.3-1.3 2-3.2 2-5.3s-.7-4.1-2-5.3l1.6-.7c1.5 1.5 2.4 3.7 2.4 6s-.9 4.5-2.4 6"/></svg>
+
+    </a>
+    ClyphX Pro manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://isotonikstudios.com/product/clyphx-pro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Buy ClyphX Pro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additional-resources" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Additional Resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Manual
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Manual
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/core-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Core Concepts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/general-action-information/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    General Action Information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/addendum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Addendum
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/using-midi-controllers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Using MIDI Controllers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/updating-and-backing-up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Updating and Backing up
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/optional-accessories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Optional Accessories
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/macrobat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Macrobat
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Support
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Action Reference
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Action Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../global-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Global Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scene-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Scene Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nav-view-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigation and View Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../browser-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Browser Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MIDI Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Track Actions
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Track Actions
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#addclip" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDCLIP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addclip-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDCLIP x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addclip-x-y" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDCLIP x y
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addstop-or-remstop" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDSTOP or REMSTOP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addstop-x-or-remstop-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDSTOP x or REMSTOP x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arm" class="md-nav__link">
+    <span class="md-ellipsis">
+      ARM
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#color-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      COLOR x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#color-or" class="md-nav__link">
+    <span class="md-ellipsis">
+      COLOR &lt; or &gt;
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copyclip" class="md-nav__link">
+    <span class="md-ellipsis">
+      COPYCLIP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copyclip-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      COPYCLIP x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cue" class="md-nav__link">
+    <span class="md-ellipsis">
+      CUE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#del" class="md-nav__link">
+    <span class="md-ellipsis">
+      DEL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dupe" class="md-nav__link">
+    <span class="md-ellipsis">
+      DUPE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fold" class="md-nav__link">
+    <span class="md-ellipsis">
+      FOLD
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      IN x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insub-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      INSUB x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jump-or" class="md-nav__link">
+    <span class="md-ellipsis">
+      JUMP &lt; or &gt;
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jump-x-or-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      JUMP &lt;x or &gt;x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mon-or-mon-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      MON or MON x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mute" class="md-nav__link">
+    <span class="md-ellipsis">
+      MUTE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#name-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      NAME x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#namea-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      NAMEA x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#namep-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      NAMEP x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#out-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      OUT x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outsub-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      OUTSUB x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pan-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      PAN x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#panl-x-or-panr-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      PANL x or PANR x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pasteclip-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      PASTECLIP x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pasteclipe-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      PASTECLIPE x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#play" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLAY
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#play-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLAY x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#play-rnd" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLAY RND
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#play-rndx-y" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLAY RNDx-y
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#play-rndc" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLAY RNDC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#play-or" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLAY &lt; or &gt;
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#play-x-or-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLAY &lt;x or &gt;x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playc" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLAYC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playl" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLAYL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playq" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLAYQ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playlq" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLAYLQ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recfix-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECFIX x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recfix-x-y" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECFIX x y
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#renameall" class="md-nav__link">
+    <span class="md-ellipsis">
+      RENAMEALL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#renameall-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      RENAMEALL x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sel" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sel-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEL x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#send-ltr-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEND ltr x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solo" class="md-nav__link">
+    <span class="md-ellipsis">
+      SOLO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#splitpan" class="md-nav__link">
+    <span class="md-ellipsis">
+      SPLITPAN
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stop" class="md-nav__link">
+    <span class="md-ellipsis">
+      STOP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stop-nq" class="md-nav__link">
+    <span class="md-ellipsis">
+      STOP NQ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vol-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      VOL x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xfade-or-xfade-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      XFADE or XFADE x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xfader-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      XFADER x
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../device-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Device Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../simpler-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Simpler Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../device-chain-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Device Chain Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../drum-pad-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Drum Pad Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../snap-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Snap Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../snap-legacy-action/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Snap Legacy Action
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_14" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../clip-actions/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Clip actions
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_14" id="__nav_5_14_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_14">
+            <span class="md-nav__icon md-icon"></span>
+            Clip actions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-actions/clip-loop-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clip Loop Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-actions/clip-cue-action/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clip Cue Action
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-actions/clip-envelope-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clip Envelope Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-actions/clip-envelope-capture-action/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clip Envelope Capture Action
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-actions/clip-note-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clip Note Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../control-surface-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Control Surface Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../push-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Push Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crossfire-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CrossFire Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arsenal-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arsenal Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ddc-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DDC Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#addclip" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDCLIP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addclip-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDCLIP x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addclip-x-y" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDCLIP x y
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addstop-or-remstop" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDSTOP or REMSTOP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addstop-x-or-remstop-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDSTOP x or REMSTOP x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arm" class="md-nav__link">
+    <span class="md-ellipsis">
+      ARM
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#color-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      COLOR x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#color-or" class="md-nav__link">
+    <span class="md-ellipsis">
+      COLOR &lt; or &gt;
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copyclip" class="md-nav__link">
+    <span class="md-ellipsis">
+      COPYCLIP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copyclip-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      COPYCLIP x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cue" class="md-nav__link">
+    <span class="md-ellipsis">
+      CUE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#del" class="md-nav__link">
+    <span class="md-ellipsis">
+      DEL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dupe" class="md-nav__link">
+    <span class="md-ellipsis">
+      DUPE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fold" class="md-nav__link">
+    <span class="md-ellipsis">
+      FOLD
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      IN x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insub-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      INSUB x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jump-or" class="md-nav__link">
+    <span class="md-ellipsis">
+      JUMP &lt; or &gt;
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jump-x-or-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      JUMP &lt;x or &gt;x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mon-or-mon-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      MON or MON x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mute" class="md-nav__link">
+    <span class="md-ellipsis">
+      MUTE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#name-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      NAME x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#namea-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      NAMEA x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#namep-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      NAMEP x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#out-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      OUT x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outsub-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      OUTSUB x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pan-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      PAN x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#panl-x-or-panr-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      PANL x or PANR x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pasteclip-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      PASTECLIP x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pasteclipe-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      PASTECLIPE x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#play" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLAY
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#play-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLAY x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#play-rnd" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLAY RND
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#play-rndx-y" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLAY RNDx-y
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#play-rndc" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLAY RNDC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#play-or" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLAY &lt; or &gt;
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#play-x-or-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLAY &lt;x or &gt;x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playc" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLAYC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playl" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLAYL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playq" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLAYQ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playlq" class="md-nav__link">
+    <span class="md-ellipsis">
+      PLAYLQ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recfix-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECFIX x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recfix-x-y" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECFIX x y
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#renameall" class="md-nav__link">
+    <span class="md-ellipsis">
+      RENAMEALL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#renameall-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      RENAMEALL x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sel" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sel-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEL x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#send-ltr-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEND ltr x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solo" class="md-nav__link">
+    <span class="md-ellipsis">
+      SOLO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#splitpan" class="md-nav__link">
+    <span class="md-ellipsis">
+      SPLITPAN
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stop" class="md-nav__link">
+    <span class="md-ellipsis">
+      STOP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stop-nq" class="md-nav__link">
+    <span class="md-ellipsis">
+      STOP NQ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vol-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      VOL x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xfade-or-xfade-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      XFADE or XFADE x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xfader-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      XFADER x
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="track-actions">Track Actions<a class="headerlink" href="#track-actions" title="Permanent link">&para;</a></h1>
+<p>The following Actions are <a href="/manual/general-action-information#track-based-actions">Track-based Actions</a> that allow you to control parameters, properties and functions of Tracks.</p>
+<hr />
+<h3 id="addclip">ADDCLIP<a class="headerlink" href="#addclip" title="Permanent link">&para;</a></h3>
+<p>Create a 1 Bar MIDI Clip in the selected Clip Slot on the Track.</p>
+<h3 id="addclip-x">ADDCLIP <code>x</code><a class="headerlink" href="#addclip-x" title="Permanent link">&para;</a></h3>
+<p><code>x</code> is the Scene number of the Clip Slot where a 1 Bar MIDI Clip will be created. Specify <code>SEL</code> for the selected Scene, <code>LAST</code> for the last Scene in the Set or <code>EMPTY</code> for the first empty Clip Slot on the Track.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ADDCLIP 10
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>ADDCLIP SEL
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>ADDCLIP EMPTY
+</span></code></pre></div>
+<h3 id="addclip-x-y">ADDCLIP <code>x</code> <code>y</code><a class="headerlink" href="#addclip-x-y" title="Permanent link">&para;</a></h3>
+<p>Same as <a href="#addclip-x">ADDCLIP x</a>, but creates a MIDI Clip that is <code>y</code> Bars long.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ADDCLIP 10 4
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>ADDCLIP SEL 0.25
+</span></code></pre></div>
+<h3 id="addstop-or-remstop">ADDSTOP or REMSTOP<a class="headerlink" href="#addstop-or-remstop" title="Permanent link">&para;</a></h3>
+<p>Add or remove the Stop Button from the selected Clip Slot on the Track. </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ADDSTOP
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>REMSTOP
+</span></code></pre></div>
+<h3 id="addstop-x-or-remstop-x">ADDSTOP <code>x</code> or REMSTOP <code>x</code><a class="headerlink" href="#addstop-x-or-remstop-x" title="Permanent link">&para;</a></h3>
+<p><code>x</code> is the Scene number of the Clip Slot whose Stop Button will be added or removed. Specify <code>SEL</code> for the selected Scene, <code>LAST</code> for the last Scene or <code>ALL</code> for all Clip Slots.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ADDSTOP 10 
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>REMSTOP SEL
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>REMSTOP ALL
+</span></code></pre></div>
+<h3 id="arm">ARM<a class="headerlink" href="#arm" title="Permanent link">&para;</a></h3>
+<p>Toggle, turn on or turn off Track Arm. <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ARM
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>ARM ON
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>ARM OFF
+</span></code></pre></div>
+<h3 id="color-x">COLOR <code>x</code><a class="headerlink" href="#color-x" title="Permanent link">&para;</a></h3>
+<p><code>x</code> is the index of the Color (in the range of 1 - 70) to set the Track to.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>COLOR 5
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>COLOR 43
+</span></code></pre></div>
+<h3 id="color-or">COLOR &lt; or &gt;<a class="headerlink" href="#color-or" title="Permanent link">&para;</a></h3>
+<p>Select the previous/next Color for the Track. </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>COLOR &lt;
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>COLOR &gt;
+</span></code></pre></div>
+<h3 id="copyclip">COPYCLIP<a class="headerlink" href="#copyclip" title="Permanent link">&para;</a></h3>
+<p>Copy the Clip playing on the Track for use with the <a href="#pasteclip-x">PASTECLIP</a> Action.</p>
+<h3 id="copyclip-x">COPYCLIP <code>x</code><a class="headerlink" href="#copyclip-x" title="Permanent link">&para;</a></h3>
+<p>Same as COPYCLIP, but <code>x</code> is the Scene number of the Clip Slot or the name of the Clip to copy. Specify <code>SEL</code> for the selected Scene or <code>LAST</code> for the last Scene.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>COPYCLIP 10
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>COPYCLIP &quot;My Clip&quot;
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>COPYCLIP SEL
+</span></code></pre></div>
+<h3 id="cue">CUE<a class="headerlink" href="#cue" title="Permanent link">&para;</a></h3>
+<p>Adjust Preview Volume (Master Track only). This is a <a href="/manual/general-action-information#continuous-parameters">Continuous Parameter</a>.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>MST/CUE 50
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>MST/CUE &gt;
+</span></code></pre></div>
+<h3 id="del">DEL<a class="headerlink" href="#del" title="Permanent link">&para;</a></h3>
+<p>Delete the Track. It is not possible to Delete a Track if it's the only Track in the Set or if it's the Master Track.</p>
+<h3 id="dupe">DUPE<a class="headerlink" href="#dupe" title="Permanent link">&para;</a></h3>
+<p>Duplicate the Track. Returns and the Master Track cannot be Duplicated.</p>
+<h3 id="fold">FOLD<a class="headerlink" href="#fold" title="Permanent link">&para;</a></h3>
+<p>Toggle, turn on or turn off Track Fold. </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>FOLD
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>FOLD ON
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>FOLD OFF
+</span></code></pre></div>
+<h3 id="in-x">IN <code>x</code><a class="headerlink" href="#in-x" title="Permanent link">&para;</a></h3>
+<p>Adjust Input Routing. This is an <a href="/manual/general-action-information/#adjustable-properties">Adjustable Property</a>. </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>IN &quot;Computer Keyboard
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>IN &gt;
+</span></code></pre></div>
+<h3 id="insub-x">INSUB <code>x</code><a class="headerlink" href="#insub-x" title="Permanent link">&para;</a></h3>
+<p>Adjust Input Sub-Routing. This is an <a href="/manual/general-action-information/#adjustable-properties">Adjustable Property</a>. </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>INSUB &quot;Ch. 1&quot;
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>INSUB &gt;
+</span></code></pre></div>
+<h3 id="jump-or">JUMP &lt; or &gt;<a class="headerlink" href="#jump-or" title="Permanent link">&para;</a></h3>
+<p>Jump the Playback Position of the playing Clip on the Track Backward/Forward by 1 Beat.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>JUMP &lt;
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>JUMP &gt;
+</span></code></pre></div>
+<h3 id="jump-x-or-x">JUMP &lt;<code>x</code> or &gt;<code>x</code><a class="headerlink" href="#jump-x-or-x" title="Permanent link">&para;</a></h3>
+<p>Jump the Playback Position of the playing Clip on the Track Backward/Forward by <code>x</code> Beats (specify <code>B</code> for Bars).</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>JUMP &lt;4B
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>JUMP &gt;16
+</span></code></pre></div>
+<h3 id="mon-or-mon-x">MON or MON <code>x</code><a class="headerlink" href="#mon-or-mon-x" title="Permanent link">&para;</a></h3>
+<p>Toggle Track Monitoring state or set a particular state where <code>x</code> is the state to set.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>MON
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>MON IN
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>MON AUTO
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>MON OFF
+</span></code></pre></div>
+<h3 id="mute">MUTE<a class="headerlink" href="#mute" title="Permanent link">&para;</a></h3>
+<p>Toggle, turn on or turn off Track Mute (track activator).</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>MUTE
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>MUTE ON
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>MUTE OFF
+</span></code></pre></div>
+<h3 id="name-x">NAME <code>x</code><a class="headerlink" href="#name-x" title="Permanent link">&para;</a></h3>
+<p><code>x</code> is the new name for the Track. </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>NAME &quot;Bkg Vocals&quot;
+</span></code></pre></div>
+<h3 id="namea-x">NAMEA <code>x</code><a class="headerlink" href="#namea-x" title="Permanent link">&para;</a></h3>
+<p>Similar to <a href="#name-x">NAME</a>, but adds <code>x</code> after the current name. </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>NAMEA &quot;Synth&quot;
+</span></code></pre></div>
+<h3 id="namep-x">NAMEP <code>x</code><a class="headerlink" href="#namep-x" title="Permanent link">&para;</a></h3>
+<p>Similar to <a href="#name-x">NAME</a>, but adds <code>x</code> before the current name. </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>NAMEP &quot;Layer&quot;
+</span></code></pre></div>
+<h3 id="out-x">OUT <code>x</code><a class="headerlink" href="#out-x" title="Permanent link">&para;</a></h3>
+<p>Adjust Output Routing. This is an <a href="/manual/general-action-information/#adjustable-properties">Adjustable Property</a>. </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>OUT &quot;To MT Player 1&quot;
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>OUT &gt;
+</span></code></pre></div>
+<h3 id="outsub-x">OUTSUB <code>x</code><a class="headerlink" href="#outsub-x" title="Permanent link">&para;</a></h3>
+<p>Adjust Output Sub-Routing. This is an <a href="/manual/general-action-information/#adjustable-properties">Adjustable Property</a>. </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>OUTSUB &quot;Ch. 10&quot;
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>OUTSUB &gt;
+</span></code></pre></div>
+<h3 id="pan-x">PAN <code>x</code><a class="headerlink" href="#pan-x" title="Permanent link">&para;</a></h3>
+<p>Adjust Track Pan. This is a <a href="/manual/general-action-information#continuous-parameters">Continuous Parameter</a>.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>PAN 100
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>PAN &gt;
+</span></code></pre></div>
+<h3 id="panl-x-or-panr-x">PANL <code>x</code> or PANR <code>x</code><a class="headerlink" href="#panl-x-or-panr-x" title="Permanent link">&para;</a></h3>
+<p>Adjust Track Left or Right Split Stereo Panning. This is a <a href="/manual/general-action-information#continuous-parameters">Continuous Parameter</a>.</p>
+<h3 id="pasteclip-x">PASTECLIP <code>x</code><a class="headerlink" href="#pasteclip-x" title="Permanent link">&para;</a></h3>
+<p><code>x</code> is the Scene number of the Clip Slot to paste into for use with the <a href="#copyclip-x">COPYCLIP</a> Action. Specify <code>SEL</code> for the selected Scene, <code>LAST</code> for the last Scene in the Set or <code>EMPTY</code> for the first empty Clip Slot on the Track.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>PASTECLIP 10
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>PASTECLIP SEL
+</span></code></pre></div>
+<h3 id="pasteclipe-x">PASTECLIPE <code>x</code><a class="headerlink" href="#pasteclipe-x" title="Permanent link">&para;</a></h3>
+<p>Same as <a href="#pasteclip-x">PASTECLIP</a>, but will only paste into empty Clip Slots.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>PASTECLIPE 4
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>PASTECLIPE LAST
+</span></code></pre></div>
+<h3 id="play">PLAY<a class="headerlink" href="#play" title="Permanent link">&para;</a></h3>
+<p>When triggered via an <a href="/manual/core-concepts#x-clips">X-Clip</a>, Launch the Clip Slot on the same Scene as the X-Clip. Otherwise, re-Launch the playing Clip Slot or Launch the Clip Slot at the selected Scene.</p>
+<h3 id="play-x">PLAY <code>x</code><a class="headerlink" href="#play-x" title="Permanent link">&para;</a></h3>
+<p><code>x</code> is the Scene number of the Clip Slot or the name of the Clip to Launch. Specify <code>SEL</code> for the selected Scene, <code>LAST</code> for the last Scene in the Set or
+<code>EMPTY</code> for the first empty Clip Slot on the Track.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>PLAY 10
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>PLAY SEL
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>PLAY &quot;My Clip&quot;
+</span></code></pre></div>
+<h3 id="play-rnd">PLAY RND<a class="headerlink" href="#play-rnd" title="Permanent link">&para;</a></h3>
+<p>Launch a Clip Slot at a randomly selected Scene.</p>
+<h3 id="play-rndx-y">PLAY RND<code>x</code>-<code>y</code><a class="headerlink" href="#play-rndx-y" title="Permanent link">&para;</a></h3>
+<p>Launch a Clip Slot at a randomly selected Scene in the range of <code>x</code>-<code>y</code> (where both <code>x</code> and <code>y</code> are in the range of 1 - the number of Scenes in the Set).</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>PLAY RND5-10
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>PLAY RND96-142
+</span></code></pre></div>
+<h3 id="play-rndc">PLAY RNDC<a class="headerlink" href="#play-rndc" title="Permanent link">&para;</a></h3>
+<p>Same as the <code>RND</code> Actions covered above, but will not not Launch empty Clip Slots and does not apply to Group Tracks.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>PLAY RNDC
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>PLAY RNDC10-50
+</span></code></pre></div>
+<h3 id="play-or">PLAY &lt; or &gt;<a class="headerlink" href="#play-or" title="Permanent link">&para;</a></h3>
+<p>Launch the previous/next Clip Slot relative to the playing Clip. This will not Launch empty Clip Slots and does not apply to Group Tracks.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>PLAY &lt;
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>PLAY &gt;
+</span></code></pre></div>
+<h3 id="play-x-or-x">PLAY &lt;<code>x</code> or &gt;<code>x</code><a class="headerlink" href="#play-x-or-x" title="Permanent link">&para;</a></h3>
+<p>Launch the Clip Slot that is <code>x</code>-Scenes prior to or after the playing Clip. This does not apply to Group Tracks.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>PLAY &lt;5
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>PLAY &gt;3
+</span></code></pre></div>
+<h3 id="playc">PLAYC<a class="headerlink" href="#playc" title="Permanent link">&para;</a></h3>
+<p>Same as the <code>PLAY</code> Actions listed above, but will not Launch empty Clip Slots and does not apply to Group Tracks.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>PLAYC &quot;My Clip&quot;
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>PLAYC RND
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>PLAYC &gt;
+</span></code></pre></div>
+<h3 id="playl">PLAYL<a class="headerlink" href="#playl" title="Permanent link">&para;</a></h3>
+<p>Same as the <code>PLAY</code> Actions listed above, but Launches the Clip with Legato using the current Global Quantization value, will not Launch empty Clip Slots and does not apply to Group Tracks.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>PLAYL &quot;My Clip&quot;
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>PLAYL RND
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>PLAYL &gt;
+</span></code></pre></div>
+<h3 id="playq">PLAYQ<a class="headerlink" href="#playq" title="Permanent link">&para;</a></h3>
+<p>Same as the <code>PLAY</code> Actions listed above, but Launches the Clip using a specific quantization value (regardless of the current Global Quantization value or the Launch Quantization value of the Clip), will not Launch empty Clip Slots and does not apply to Group Tracks.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>PLAYQ NONE &quot;My Clip&quot;
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>PLAYQ 1 BAR RND
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>PLAYQ 1/4 &gt;
+</span></code></pre></div>
+<h3 id="playlq">PLAYLQ<a class="headerlink" href="#playlq" title="Permanent link">&para;</a></h3>
+<p>This is a combination of <a href="#playl">PLAYL</a> and <a href="#playq">PLAYQ</a>.</p>
+<h3 id="recfix-x">RECFIX <code>x</code><a class="headerlink" href="#recfix-x" title="Permanent link">&para;</a></h3>
+<p>Trigger fixed-length Session Record into the Clip Slot on the same Scene as the X-Clip or (for other <a href="/manual/core-concepts#x-triggers">X-Trigger</a> types) the selected Scene where <code>x</code> is the length to record in Bars. Note, however, that Session Recording is always quantized according to Global Quantization and so your Global Quantization value needs to be less than or equal to the number of Bars to record for. For example, to record for 4 Bars, Global Quantization would need to be 4 Bars or less.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>RECFIX 4
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>RECFIX 16
+</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>RECFIX 0.5
+</span></code></pre></div>
+<h3 id="recfix-x-y">RECFIX <code>x</code> <code>y</code><a class="headerlink" href="#recfix-x-y" title="Permanent link">&para;</a></h3>
+<p>Same as above, but <code>y</code> is the Scene number of the Clip Slot to record into. Specify <code>SEL</code> for the selected Scene, <code>LAST</code> for the last Scene in the Set or <code>EMPTY</code> for the first empty Clip Slot on the Track.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>RECFIX 2 5
+</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>RECFIX 16 10
+</span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>RECFIX 1 EMPTY
+</span></code></pre></div>
+<h3 id="renameall">RENAMEALL<a class="headerlink" href="#renameall" title="Permanent link">&para;</a></h3>
+<p>Rename all the Clips on the Track based on the Track's name.</p>
+<h3 id="renameall-x">RENAMEALL <code>x</code><a class="headerlink" href="#renameall-x" title="Permanent link">&para;</a></h3>
+<p>Rename all the Clips on the Track where <code>x</code> is the base name to use.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>RENAMEALL &quot;Drums&quot;
+</span></code></pre></div>
+<h3 id="sel">SEL<a class="headerlink" href="#sel" title="Permanent link">&para;</a></h3>
+<p>Select the Track and highlight the playing Clip or the Clip at the selected Scene.</p>
+<h3 id="sel-x">SEL <code>x</code><a class="headerlink" href="#sel-x" title="Permanent link">&para;</a></h3>
+<p>Select the Track and a particular Clip Slot where <code>x</code> is the Scene number of the Clip Slot or the name of the Clip. Specify <code>SEL</code> for the selected Scene, <code>LAST</code> for the last Scene in the Set or <code>EMPTY</code> for the first empty Clip Slot on the Track.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>SEL 10
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>SEL &quot;My Clip&quot;
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>SEL EMPTY
+</span></code></pre></div>
+<h3 id="send-ltr-x">SEND <code>ltr</code> <code>x</code><a class="headerlink" href="#send-ltr-x" title="Permanent link">&para;</a></h3>
+<p><code>ltr</code> is the letter of the Track Send to adjust. Specify <code>ALL</code> to adjust all Track Sends. This is a <a href="/manual/general-action-information#continuous-parameters">Continuous Parameter</a>.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>SEND A 50
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>SEND B &gt;
+</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>SEND ALL RND
+</span></code></pre></div>
+<h3 id="solo">SOLO<a class="headerlink" href="#solo" title="Permanent link">&para;</a></h3>
+<p>Toggle, turn on or turn off Track Solo. <sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>SOLO
+</span><span id="__span-37-2"><a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>SOLO ON
+</span><span id="__span-37-3"><a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a>SOLO OFF
+</span></code></pre></div>
+<h3 id="splitpan">SPLITPAN<a class="headerlink" href="#splitpan" title="Permanent link">&para;</a></h3>
+<p>Toggle, turn on or turn off Track Split Stereo Panning.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>SPLITPAN
+</span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>SPLITPAN ON
+</span><span id="__span-38-3"><a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a>SPLITPAN OFF
+</span></code></pre></div>
+<h3 id="stop">STOP<a class="headerlink" href="#stop" title="Permanent link">&para;</a></h3>
+<p>Stop the playing Clip on the Track.</p>
+<h3 id="stop-nq">STOP NQ<a class="headerlink" href="#stop-nq" title="Permanent link">&para;</a></h3>
+<p>Stop the playing Clip on the Track immediately (not quantized).</p>
+<h3 id="vol-x">VOL <code>x</code><a class="headerlink" href="#vol-x" title="Permanent link">&para;</a></h3>
+<p>Adjust Track Volume. This is a <a href="/manual/general-action-information#continuous-parameters">Continuous Parameter</a>.</p>
+<h3 id="xfade-or-xfade-x">XFADE or XFADE <code>x</code><a class="headerlink" href="#xfade-or-xfade-x" title="Permanent link">&para;</a></h3>
+<p>Toggle Track Crossfade assignment or set a particular state where <code>x</code> is the state to set.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>XFADE
+</span><span id="__span-39-2"><a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a>XFADE A
+</span><span id="__span-39-3"><a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a>XFADE B
+</span><span id="__span-39-4"><a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a>XFADE OFF
+</span></code></pre></div>
+<h3 id="xfader-x">XFADER <code>x</code><a class="headerlink" href="#xfader-x" title="Permanent link">&para;</a></h3>
+<p>Adjust Master Crossfader (Master Track only). This is a <a href="/manual/general-action-information#continuous-parameters">Continuous Parameter</a>.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>MST/XFADER 50
+</span><span id="__span-40-2"><a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>MST/XFADER &gt;
+</span></code></pre></div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>The ARM and SOLO Actions will not obey your Preference settings for Exclusive Arm and Solo. If you’d like to exclusively arm/solo a Track, you can first disarm/unsolo all Tracks. For example, to exclusively solo the selected Track: <code>ALL/SOLO OFF ; SEL/SOLO</code>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../midi-actions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: MIDI Actions">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                MIDI Actions
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../device-actions/" class="md-footer__link md-footer__link--next" aria-label="Next: Device Actions">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Device Actions
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "content.code.copy", "navigation.tracking", "navigation.sections", "navigation.footer", "navigation.header", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="../../js/open_in_new_tab.js"></script>
+      
+    
+  </body>
+</html>

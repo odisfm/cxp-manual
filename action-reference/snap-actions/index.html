@@ -1,0 +1,1776 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://cxpman.com/action-reference/snap-actions/">
+      
+      
+        <link rel="prev" href="../drum-pad-actions/">
+      
+      
+        <link rel="next" href="../snap-legacy-action/">
+      
+      
+      <link rel="icon" href="../../favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Snap Actions - ClyphX Pro manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="../../assets/external/fonts.googleapis.com/css.5c146275.css">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#snap-actions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ClyphX Pro manual" class="md-header__button md-logo" aria-label="ClyphX Pro manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2M7.4 18C5.9 16.5 5 14.3 5 12s.9-4.5 2.4-6l1.6.7C7.7 7.9 7 9.9 7 12s.7 4.1 2 5.3zm5.3-3-.8-2-1.4 2H9l2.3-3.1L10 9h1.3l.8 2 1.4-2H15l-2.2 3 1.3 3zm3.9 3-1.6-.7c1.3-1.3 2-3.2 2-5.3s-.7-4.1-2-5.3l1.6-.7c1.5 1.5 2.4 3.7 2.4 6s-.9 4.5-2.4 6"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ClyphX Pro manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Snap Actions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ClyphX Pro manual" class="md-nav__button md-logo" aria-label="ClyphX Pro manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2M7.4 18C5.9 16.5 5 14.3 5 12s.9-4.5 2.4-6l1.6.7C7.7 7.9 7 9.9 7 12s.7 4.1 2 5.3zm5.3-3-.8-2-1.4 2H9l2.3-3.1L10 9h1.3l.8 2 1.4-2H15l-2.2 3 1.3 3zm3.9 3-1.6-.7c1.3-1.3 2-3.2 2-5.3s-.7-4.1-2-5.3l1.6-.7c1.5 1.5 2.4 3.7 2.4 6s-.9 4.5-2.4 6"/></svg>
+
+    </a>
+    ClyphX Pro manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://isotonikstudios.com/product/clyphx-pro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Buy ClyphX Pro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additional-resources" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Additional Resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Manual
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Manual
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/core-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Core Concepts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/general-action-information/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    General Action Information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/addendum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Addendum
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/using-midi-controllers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Using MIDI Controllers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/updating-and-backing-up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Updating and Backing up
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/optional-accessories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Optional Accessories
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/macrobat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Macrobat
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Support
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Action Reference
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Action Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../global-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Global Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scene-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Scene Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nav-view-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigation and View Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../browser-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Browser Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MIDI Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../track-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Track Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../device-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Device Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../simpler-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Simpler Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../device-chain-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Device Chain Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../drum-pad-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Drum Pad Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Snap Actions
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Snap Actions
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#recall" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECALL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recall-ramp-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECALL RAMP x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recall-ramps-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECALL RAMPS x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#snap" class="md-nav__link">
+    <span class="md-ellipsis">
+      SNAP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#snapdel-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      SNAPDEL x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#snapdelall" class="md-nav__link">
+    <span class="md-ellipsis">
+      SNAPDELALL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#snapshow" class="md-nav__link">
+    <span class="md-ellipsis">
+      SNAPSHOW
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#snap-action-modifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Snap Action Modifiers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snap-action-general-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Snap Action General Notes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snap-action-settings-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Snap Action Settings Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../snap-legacy-action/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Snap Legacy Action
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_14" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../clip-actions/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Clip actions
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_14" id="__nav_5_14_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_14">
+            <span class="md-nav__icon md-icon"></span>
+            Clip actions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-actions/clip-loop-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clip Loop Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-actions/clip-cue-action/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clip Cue Action
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-actions/clip-envelope-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clip Envelope Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-actions/clip-envelope-capture-action/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clip Envelope Capture Action
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-actions/clip-note-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clip Note Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../control-surface-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Control Surface Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../push-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Push Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crossfire-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CrossFire Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arsenal-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arsenal Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ddc-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DDC Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#recall" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECALL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recall-ramp-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECALL RAMP x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recall-ramps-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECALL RAMPS x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#snap" class="md-nav__link">
+    <span class="md-ellipsis">
+      SNAP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#snapdel-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      SNAPDEL x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#snapdelall" class="md-nav__link">
+    <span class="md-ellipsis">
+      SNAPDELALL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#snapshow" class="md-nav__link">
+    <span class="md-ellipsis">
+      SNAPSHOW
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#snap-action-modifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Snap Action Modifiers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snap-action-general-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Snap Action General Notes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snap-action-settings-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Snap Action Settings Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="snap-actions">Snap Actions<a class="headerlink" href="#snap-actions" title="Permanent link">&para;</a></h1>
+<p>The following Actions are <a href="/manual/general-action-information/#track-based-actions">Track-based Actions</a> that allow you to store and recall Snapshots (Snaps) of Track and Device settings. Unlike other Actions, when using these Actions in an Action List, the Action List must be preceded by a unique <a href="/manual/core-concepts/#identifiers">Identifier</a> (even in the case of <a href="/manual/core-concepts/#x-controls">X-Controls</a> and <a href="/manual/core-concepts/#x-osc">X-OSCs</a>, which normally don't require any sort of Identifier). The Identifier is used as the unique name for the Snap. Additionally, Snap Actions should always be the first (or only) Action in an Action List.</p>
+<hr />
+<h3 id="recall">RECALL<a class="headerlink" href="#recall" title="Permanent link">&para;</a></h3>
+<p>Recall the settings stored in a Snap immediately.</p>
+<h3 id="recall-ramp-x">RECALL RAMP <code>x</code><a class="headerlink" href="#recall-ramp-x" title="Permanent link">&para;</a></h3>
+<p>Recall the settings stored in a Snap with ramping where <code>x</code> is the ramp duration in hundreds of milliseconds.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>RECALL RAMP 5
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>RECALL RAMP 20
+</span></code></pre></div>
+<h3 id="recall-ramps-x">RECALL RAMPS <code>x</code><a class="headerlink" href="#recall-ramps-x" title="Permanent link">&para;</a></h3>
+<p>Recall the settings stored in a Snap with ramping synced to Live's playback where <code>x</code> is the ramp duration in Beats (specify <strong>B</strong> for Bars)</p>
+<h3 id="snap">SNAP<a class="headerlink" href="#snap" title="Permanent link">&para;</a></h3>
+<p>Store a Snap.</p>
+<h3 id="snapdel-x">SNAPDEL <code>x</code><a class="headerlink" href="#snapdel-x" title="Permanent link">&para;</a></h3>
+<p>Delete the Snap named <code>x</code>.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>SNAPDEL MY SNAP
+</span></code></pre></div>
+<h3 id="snapdelall">SNAPDELALL<a class="headerlink" href="#snapdelall" title="Permanent link">&para;</a></h3>
+<p>Delete all Snaps stored within the Set. <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<h3 id="snapshow">SNAPSHOW<a class="headerlink" href="#snapshow" title="Permanent link">&para;</a></h3>
+<p>Create a MIDI Track at the end of the Track list that contains an X-Clip for each Snap stored within the Set. <sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<h2 id="details">Details<a class="headerlink" href="#details" title="Permanent link">&para;</a></h2>
+<p>By default, the <a href="#snap">SNAP</a> Action will store the Volume, Pan and Send settings of the Track as well as the settings of the first Device on the Track. It's possible to modify the settings that will be stored as we'll see shortly.</p>
+<p>The <a href="#recall">RECALL</a> Action will recall the Snap associated with the Identifier used when storing the Snap. This makes it possible to recall a Snap from multiple different <a href="/manual/core-concepts/#x-triggers">X-Triggers</a>. Each X-Trigger simply has to include the Identifier of the Snap. It's also possible to recall Snaps with morphing using the <a href="/manual/core-concepts">Macrobat</a> Snap or Snap Alt Rack.</p>
+<p>When the <code>SNAP</code> Action is triggered from an X-Clip or <a href="/manual/core-concepts/#x-scenes">X-Scene</a>, the name of the X-Clip/X-Scene will be updated such that the <code>SNAP</code> Action will be removed and replaced by the <code>RECALL</code> Action. This allows you to store and then recall Snaps without having to change anything in your X-Clip/X-Scene. You can achieve the same effect with X-Controls and X-OSCs <a href="/manual/addendum/">as described here</a>. Unfortunately, this is not possible with <a href="/manual/core-concepts/#x-cues">X-Cues</a>. For that reason, it's recommended that you only use X-Cues for recalling (not storing) Snaps.</p>
+<h3 id="snap-action-modifiers">Snap Action Modifiers<a class="headerlink" href="#snap-action-modifiers" title="Permanent link">&para;</a></h3>
+<p>You can use the following Modifiers with the <a href="#snap">SNAP</a> Action to modify the settings that will be stored.</p>
+<h4 id="devx">DEV(<code>x</code>)<a class="headerlink" href="#devx" title="Permanent link">&para;</a></h4>
+<p><code>x</code> specifies the Device(s) whose settings should be stored. You can specify Devices as covered in <a href="/action-reference/device-actions">Device Actions</a>.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>SNAP DEV(ALL)
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>SNAP DEV(&quot;My Cool Device&quot;)
+</span></code></pre></div>
+<h4 id="dev-">DEV-<a class="headerlink" href="#dev-" title="Permanent link">&para;</a></h4>
+<p>Do not store the settings of any Devices. Unless this is used, the settings of the first Device on the Track (at the very least) will be stored.</p>
+<h4 id="mix">MIX<a class="headerlink" href="#mix" title="Permanent link">&para;</a></h4>
+<p>Store the Volume, Pan and Sends settings of the Track.</p>
+<h4 id="mix_1">MIX+<a class="headerlink" href="#mix_1" title="Permanent link">&para;</a></h4>
+<p>Same as MIX, but also store Mute, Solo and Crossfade settings of the Track. You can opt to also store Arm and Monitoring status in <a href="/manual/core-concepts/#settings-foldersfiles">Preferences.txt</a>.</p>
+<h4 id="mix-">MIX-<a class="headerlink" href="#mix-" title="Permanent link">&para;</a></h4>
+<p>Same as MIX+, but without Sends.</p>
+<h4 id="mixs">MIXS<a class="headerlink" href="#mixs" title="Permanent link">&para;</a></h4>
+<p>Store the Sends settings of the Track.</p>
+<h4 id="play">PLAY<a class="headerlink" href="#play" title="Permanent link">&para;</a></h4>
+<p>Store the playing status of the Track. This does not apply to Group Tracks, Return Tracks or the Master Track.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Multiple Modifiers can be used although you should not use more than one of the Mix Modifiers. For example, to store all of the Devices on Tracks 1-3 as well as settings stored by MIX+:</p>
+<p><code>[MY SNAP] 1-3/SNAP DEV(ALL.ALL) MIX+</code></p>
+</div>
+<h3 id="snap-action-general-notes">Snap Action General Notes<a class="headerlink" href="#snap-action-general-notes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>A Snap recalled from an X-Clip can alternatively use the recall keyword enclosed in brackets at the end of the name of the Track the X-Clip is on. For example, you could name the Track something like this:</p>
+<p><code>My Track [RAMPS 10]</code></p>
+<p>That would cause all Snaps recalled from the Track to be recalled with the specified smoothing or(in the case of the RACK recall keyword) to be sent to the Macrobat Snap Alt Rack. However, any X-Clip on the Track that contains its own recall keyword will override the recall keyword specified in the Track name.</p>
+</li>
+<li>
+<p>A special reserved <a href="/manual/core-concepts#identifiers">Identifier</a> (<code>LAST_SNAP</code>) can be used with the <a href="#recall">RECALL</a> Action to recall the last Snap that was stored or recalled. This would allow you to recall Snaps stored/recalled via X-Clips from a single <a href="/manual/core-concepts#x-controls">X-Control</a> (or other <a href="/manual/core-concepts#x-triggers">X-Trigger</a>). Or, you could have several X-Triggers that all used the <code>LAST_SNAP</code> Identifier with each having a different recall keyword to allow Snaps to be recalled in different ways.</p>
+</li>
+<li>
+<p>Snaps are stored within your Live Set. After storing the Snap, the Live Set will be marked as changed so that you'll be prompted to save the Set if you try to close it after storing a Snap and before you've saved the Set.</p>
+</li>
+<li>
+<p>Snaps are stored based on the Identifier of the Action List containing them. You can overwrite a Snap by storing a new Snap using the Identifier associated with the Snap to overwrite.</p>
+</li>
+<li>
+<p>It may take a few moments to entirely recall Snaps of large numbers of Tracks and/or Devices.</p>
+</li>
+<li>
+<p>If you’re attempting to take a Snap that would exceed the Snapshot Parameter Limit specified in <a href="/manual/core-concepts/#settings-foldersfiles">Preferences.txt</a>, an error message will be shown in Live's status bar.</p>
+</li>
+</ul>
+<h3 id="snap-action-settings-notes">Snap Action Settings Notes<a class="headerlink" href="#snap-action-settings-notes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>The settings for each Track are stored by the name of the Track. This allows you to add/remove/re- arrange Tracks without affecting your ability to recall Snaps you’ve stored. However, if multiple Tracks have the same name, only the first of these will apply in Snaps.</p>
+</li>
+<li>
+<p>The settings for each Device are stored by the Device's position on the Track. If Devices are added/removed/re-arranged, this may affect your ability to recall Snaps you've stored.</p>
+</li>
+<li>
+<p>Snaps store all of the exposed parameters of a Device. If the number of exposed parameters changes, which can occur with some of Live's native Devices when certain parts of the Device are turned on/off and can also occur with Plug-ins, this may affect your ability to recall Snaps you've stored.</p>
+</li>
+<li>
+<p>The mixer settings of the Chains of Racks will be stored along with the Rack itself.</p>
+</li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>These Actions are only usable with Snaps stored with ClyphX Pro v1.0.4 or later.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../drum-pad-actions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Drum Pad Actions">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Drum Pad Actions
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../snap-legacy-action/" class="md-footer__link md-footer__link--next" aria-label="Next: Snap Legacy Action">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Snap Legacy Action
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "content.code.copy", "navigation.tracking", "navigation.sections", "navigation.footer", "navigation.header", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="../../js/open_in_new_tab.js"></script>
+      
+    
+  </body>
+</html>

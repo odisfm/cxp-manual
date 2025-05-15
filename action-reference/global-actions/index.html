@@ -1,0 +1,3068 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://cxpman.com/action-reference/global-actions/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../scene-actions/">
+      
+      
+      <link rel="icon" href="../../favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Global Actions - ClyphX Pro manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="../../assets/external/fonts.googleapis.com/css.5c146275.css">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#global-actions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ClyphX Pro manual" class="md-header__button md-logo" aria-label="ClyphX Pro manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2M7.4 18C5.9 16.5 5 14.3 5 12s.9-4.5 2.4-6l1.6.7C7.7 7.9 7 9.9 7 12s.7 4.1 2 5.3zm5.3-3-.8-2-1.4 2H9l2.3-3.1L10 9h1.3l.8 2 1.4-2H15l-2.2 3 1.3 3zm3.9 3-1.6-.7c1.3-1.3 2-3.2 2-5.3s-.7-4.1-2-5.3l1.6-.7c1.5 1.5 2.4 3.7 2.4 6s-.9 4.5-2.4 6"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ClyphX Pro manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Global Actions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ClyphX Pro manual" class="md-nav__button md-logo" aria-label="ClyphX Pro manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2M7.4 18C5.9 16.5 5 14.3 5 12s.9-4.5 2.4-6l1.6.7C7.7 7.9 7 9.9 7 12s.7 4.1 2 5.3zm5.3-3-.8-2-1.4 2H9l2.3-3.1L10 9h1.3l.8 2 1.4-2H15l-2.2 3 1.3 3zm3.9 3-1.6-.7c1.3-1.3 2-3.2 2-5.3s-.7-4.1-2-5.3l1.6-.7c1.5 1.5 2.4 3.7 2.4 6s-.9 4.5-2.4 6"/></svg>
+
+    </a>
+    ClyphX Pro manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://isotonikstudios.com/product/clyphx-pro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Buy ClyphX Pro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../additional-resources" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Additional Resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Manual
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Manual
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/core-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Core Concepts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/general-action-information/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    General Action Information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/addendum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Addendum
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/using-midi-controllers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Using MIDI Controllers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/updating-and-backing-up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Updating and Backing up
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/optional-accessories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Optional Accessories
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/macrobat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Macrobat
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Support
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Action Reference
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Action Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Global Actions
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Global Actions
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#addaudio" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDAUDIO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addaudio-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDAUDIO X
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addmidi" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDMIDI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addmidi-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDMIDI X
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addreturn" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDRETURN
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b2a" class="md-nav__link">
+    <span class="md-ellipsis">
+      B2A
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bind-i-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      BIND i x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bind-i-x-or-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      BIND i &lt;x or &gt;x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boundp-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      BOUNDP x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bpm-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      BPM x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cap" class="md-nav__link">
+    <span class="md-ellipsis">
+      CAP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debug" class="md-nav__link">
+    <span class="md-ellipsis">
+      DEBUG
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#draw" class="md-nav__link">
+    <span class="md-ellipsis">
+      DRAW
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dummy-or-d" class="md-nav__link">
+    <span class="md-ellipsis">
+      DUMMY or D
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#follow" class="md-nav__link">
+    <span class="md-ellipsis">
+      FOLLOW
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fullvelo" class="md-nav__link">
+    <span class="md-ellipsis">
+      FULLVELO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gq" class="md-nav__link">
+    <span class="md-ellipsis">
+      GQ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gq-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      GQ x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grv-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      GRV x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insaudio-or-insmidi" class="md-nav__link">
+    <span class="md-ellipsis">
+      INSAUDIO or INSMIDI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loc-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      LOC x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loc-or" class="md-nav__link">
+    <span class="md-ellipsis">
+      LOC &lt; or &gt;
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#locloop-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      LOCLOOP x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      LOOP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loop-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      LOOP *x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loop-or" class="md-nav__link">
+    <span class="md-ellipsis">
+      LOOP &lt; or &gt;
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loop-x-or-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      LOOP &lt;x or &gt;x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loop-reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      LOOP RESET
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loop-start-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      LOOP START x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metro" class="md-nav__link">
+    <span class="md-ellipsis">
+      METRO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#msg-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      MSG x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      OPEN x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#over" class="md-nav__link">
+    <span class="md-ellipsis">
+      OVER
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pin" class="md-nav__link">
+    <span class="md-ellipsis">
+      PIN
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pout" class="md-nav__link">
+    <span class="md-ellipsis">
+      POUT
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pseq-reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      PSEQ RESET
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pseq-reset-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      PSEQ RESET x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rec" class="md-nav__link">
+    <span class="md-ellipsis">
+      REC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reinit" class="md-nav__link">
+    <span class="md-ellipsis">
+      REINIT
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restart" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTART
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rq" class="md-nav__link">
+    <span class="md-ellipsis">
+      RQ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      RPT
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rpt-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      RPT x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rtrig" class="md-nav__link">
+    <span class="md-ellipsis">
+      RTRIG
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#satm" class="md-nav__link">
+    <span class="md-ellipsis">
+      SATM
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#satmr" class="md-nav__link">
+    <span class="md-ellipsis">
+      SATMR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scl" class="md-nav__link">
+    <span class="md-ellipsis">
+      SCL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scl-root-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      SCL ROOT x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scl-name-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      SCL NAME x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selp-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      SELP x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setcont" class="md-nav__link">
+    <span class="md-ellipsis">
+      SETCONT
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setjump-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      SETJUMP x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setjump-or" class="md-nav__link">
+    <span class="md-ellipsis">
+      SETJUMP &lt; or &gt;
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setjump-x-or-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      SETJUMP &lt;x or &gt;x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setloc" class="md-nav__link">
+    <span class="md-ellipsis">
+      SETLOC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setplay" class="md-nav__link">
+    <span class="md-ellipsis">
+      SETPLAY
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setplaysel" class="md-nav__link">
+    <span class="md-ellipsis">
+      SETPLAYSEL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setstop" class="md-nav__link">
+    <span class="md-ellipsis">
+      SETSTOP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sig-xy" class="md-nav__link">
+    <span class="md-ellipsis">
+      SIG x/y
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#srec" class="md-nav__link">
+    <span class="md-ellipsis">
+      SREC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#srecfix-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      SRECFIX x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stopall" class="md-nav__link">
+    <span class="md-ellipsis">
+      STOPALL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stopall-nq" class="md-nav__link">
+    <span class="md-ellipsis">
+      STOPALL NQ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swing-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      SWING x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tapbpm" class="md-nav__link">
+    <span class="md-ellipsis">
+      TAPBPM
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tfollow" class="md-nav__link">
+    <span class="md-ellipsis">
+      TFOLLOW
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time" class="md-nav__link">
+    <span class="md-ellipsis">
+      TIME
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unbind" class="md-nav__link">
+    <span class="md-ellipsis">
+      UNBIND
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undo-or-redo" class="md-nav__link">
+    <span class="md-ellipsis">
+      UNDO or REDO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wait-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      WAIT x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waits-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      WAITS x
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scene-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Scene Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nav-view-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigation and View Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../browser-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Browser Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midi-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MIDI Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../track-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Track Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../device-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Device Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../simpler-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Simpler Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../device-chain-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Device Chain Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../drum-pad-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Drum Pad Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../snap-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Snap Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../snap-legacy-action/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Snap Legacy Action
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_14" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../clip-actions/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Clip actions
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_14" id="__nav_5_14_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_14">
+            <span class="md-nav__icon md-icon"></span>
+            Clip actions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-actions/clip-loop-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clip Loop Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-actions/clip-cue-action/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clip Cue Action
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-actions/clip-envelope-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clip Envelope Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-actions/clip-envelope-capture-action/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clip Envelope Capture Action
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clip-actions/clip-note-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clip Note Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../control-surface-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Control Surface Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../push-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Push Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crossfire-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CrossFire Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arsenal-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arsenal Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ddc-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DDC Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#addaudio" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDAUDIO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addaudio-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDAUDIO X
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addmidi" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDMIDI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addmidi-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDMIDI X
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addreturn" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDRETURN
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b2a" class="md-nav__link">
+    <span class="md-ellipsis">
+      B2A
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bind-i-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      BIND i x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bind-i-x-or-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      BIND i &lt;x or &gt;x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boundp-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      BOUNDP x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bpm-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      BPM x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cap" class="md-nav__link">
+    <span class="md-ellipsis">
+      CAP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debug" class="md-nav__link">
+    <span class="md-ellipsis">
+      DEBUG
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#draw" class="md-nav__link">
+    <span class="md-ellipsis">
+      DRAW
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dummy-or-d" class="md-nav__link">
+    <span class="md-ellipsis">
+      DUMMY or D
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#follow" class="md-nav__link">
+    <span class="md-ellipsis">
+      FOLLOW
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fullvelo" class="md-nav__link">
+    <span class="md-ellipsis">
+      FULLVELO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gq" class="md-nav__link">
+    <span class="md-ellipsis">
+      GQ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gq-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      GQ x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grv-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      GRV x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insaudio-or-insmidi" class="md-nav__link">
+    <span class="md-ellipsis">
+      INSAUDIO or INSMIDI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loc-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      LOC x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loc-or" class="md-nav__link">
+    <span class="md-ellipsis">
+      LOC &lt; or &gt;
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#locloop-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      LOCLOOP x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      LOOP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loop-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      LOOP *x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loop-or" class="md-nav__link">
+    <span class="md-ellipsis">
+      LOOP &lt; or &gt;
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loop-x-or-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      LOOP &lt;x or &gt;x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loop-reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      LOOP RESET
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loop-start-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      LOOP START x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metro" class="md-nav__link">
+    <span class="md-ellipsis">
+      METRO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#msg-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      MSG x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      OPEN x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#over" class="md-nav__link">
+    <span class="md-ellipsis">
+      OVER
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pin" class="md-nav__link">
+    <span class="md-ellipsis">
+      PIN
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pout" class="md-nav__link">
+    <span class="md-ellipsis">
+      POUT
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pseq-reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      PSEQ RESET
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pseq-reset-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      PSEQ RESET x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rec" class="md-nav__link">
+    <span class="md-ellipsis">
+      REC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reinit" class="md-nav__link">
+    <span class="md-ellipsis">
+      REINIT
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restart" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTART
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rq" class="md-nav__link">
+    <span class="md-ellipsis">
+      RQ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      RPT
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rpt-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      RPT x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rtrig" class="md-nav__link">
+    <span class="md-ellipsis">
+      RTRIG
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#satm" class="md-nav__link">
+    <span class="md-ellipsis">
+      SATM
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#satmr" class="md-nav__link">
+    <span class="md-ellipsis">
+      SATMR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scl" class="md-nav__link">
+    <span class="md-ellipsis">
+      SCL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scl-root-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      SCL ROOT x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scl-name-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      SCL NAME x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selp-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      SELP x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setcont" class="md-nav__link">
+    <span class="md-ellipsis">
+      SETCONT
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setjump-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      SETJUMP x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setjump-or" class="md-nav__link">
+    <span class="md-ellipsis">
+      SETJUMP &lt; or &gt;
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setjump-x-or-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      SETJUMP &lt;x or &gt;x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setloc" class="md-nav__link">
+    <span class="md-ellipsis">
+      SETLOC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setplay" class="md-nav__link">
+    <span class="md-ellipsis">
+      SETPLAY
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setplaysel" class="md-nav__link">
+    <span class="md-ellipsis">
+      SETPLAYSEL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setstop" class="md-nav__link">
+    <span class="md-ellipsis">
+      SETSTOP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sig-xy" class="md-nav__link">
+    <span class="md-ellipsis">
+      SIG x/y
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#srec" class="md-nav__link">
+    <span class="md-ellipsis">
+      SREC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#srecfix-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      SRECFIX x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stopall" class="md-nav__link">
+    <span class="md-ellipsis">
+      STOPALL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stopall-nq" class="md-nav__link">
+    <span class="md-ellipsis">
+      STOPALL NQ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swing-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      SWING x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tapbpm" class="md-nav__link">
+    <span class="md-ellipsis">
+      TAPBPM
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tfollow" class="md-nav__link">
+    <span class="md-ellipsis">
+      TFOLLOW
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time" class="md-nav__link">
+    <span class="md-ellipsis">
+      TIME
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unbind" class="md-nav__link">
+    <span class="md-ellipsis">
+      UNBIND
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undo-or-redo" class="md-nav__link">
+    <span class="md-ellipsis">
+      UNDO or REDO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wait-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      WAIT x
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waits-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      WAITS x
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="global-actions">Global Actions<a class="headerlink" href="#global-actions" title="Permanent link">&para;</a></h1>
+<p>The following Actions allow you to control Live Set-wide properties and functions as well as access internal ClyphX Pro features.</p>
+<hr />
+<h3 id="addaudio">ADDAUDIO<a class="headerlink" href="#addaudio" title="Permanent link">&para;</a></h3>
+<p>Create an Audio Track to the right of the selected Track.</p>
+<h3 id="addaudio-x">ADDAUDIO <code>X</code><a class="headerlink" href="#addaudio-x" title="Permanent link">&para;</a></h3>
+<p>Create an Audio Track where <code>x</code> is the Track number of the new Track.
+Specify <code>-1</code> to create the Track at the end of the Track list.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ADDAUDIO 5
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>ADDAUDIO -1
+</span></code></pre></div>
+<h3 id="addmidi">ADDMIDI<a class="headerlink" href="#addmidi" title="Permanent link">&para;</a></h3>
+<p>Create a MIDI Track to the right of the selected Track.</p>
+<h3 id="addmidi-x">ADDMIDI <code>X</code><a class="headerlink" href="#addmidi-x" title="Permanent link">&para;</a></h3>
+<p>Create a MIDI Track where <code>x</code> is the Track number of the new Track.
+Specify <code>-1</code> to create the Track at the end of the Track list.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ADDMIDI 10
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>ADDMIDI -1
+</span></code></pre></div>
+<h3 id="addreturn">ADDRETURN<a class="headerlink" href="#addreturn" title="Permanent link">&para;</a></h3>
+<p>Create a Return Track at the end of the Return list.</p>
+<h3 id="b2a">B2A<a class="headerlink" href="#b2a" title="Permanent link">&para;</a></h3>
+<p>Back to Arrangement.</p>
+<h3 id="bind-i-x">BIND <code>i</code> <code>x</code><a class="headerlink" href="#bind-i-x" title="Permanent link">&para;</a></h3>
+<p><em>For use with the optional <a href="/manual/optional-accessories/#clyphx-pro-bindings">ClyphX Pro Bindings Accessory</a>.</em></p>
+<p>Bind the control named <code>i</code> to <code>x</code>.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>BIND MY_BUTTON SELP
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>BIND MY_KNOB SEL/VOL
+</span></code></pre></div>
+<h3 id="bind-i-x-or-x">BIND <code>i</code> &lt;<code>x</code> or &gt;<code>x</code><a class="headerlink" href="#bind-i-x-or-x" title="Permanent link">&para;</a></h3>
+<p><em>For use with the optional <a href="/manual/optional-accessories/#clyphx-pro-bindings">ClyphX Pro Bindings Accessory</a>.</em></p>
+<p>Bind the control named <code>i</code> to the Prev/Next parameter relative to the currently bound parameter. This only applies to Device parameters, so will have no effect on Mixer parameter bindings.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>BIND MY_BUTTON &lt;,
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>BIND MY_KNOB &gt;
+</span></code></pre></div>
+<h3 id="boundp-x">BOUNDP <code>x</code><a class="headerlink" href="#boundp-x" title="Permanent link">&para;</a></h3>
+<p><em>For use with the optional <a href="/manual/optional-accessories/#clyphx-pro-bindings">ClyphX Pro Bindings Accessory</a>.</em></p>
+<p>Adjust the value of the last parameter that was adjusted via the Bindings Accessory.</p>
+<p>This is a Continuous Parameter.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>BOUNDP 100,
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>BOUNDP RND
+</span></code></pre></div>
+<h3 id="bpm-x">BPM <code>x</code><a class="headerlink" href="#bpm-x" title="Permanent link">&para;</a></h3>
+<p>Adjust Tempo. This is a <a href="/manual/general-action-information/#quasi-continuous-parameters">Quasi Continuous parameter</a>.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>BPM 100, 
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>BPM 85.53, 
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>BPM &gt;
+</span></code></pre></div>
+<h3 id="cap">CAP<a class="headerlink" href="#cap" title="Permanent link">&para;</a></h3>
+<p>Trigger <a href="https://help.ableton.com/hc/en-us/articles/360000776450-Capture-MIDI">Capture</a>.</p>
+<h3 id="debug">DEBUG<a class="headerlink" href="#debug" title="Permanent link">&para;</a></h3>
+<p>Activate debugging mode, which causes ClyphX Pro to log events as they occur to assist in <a href="/manual/troubleshooting">Troubleshooting</a>.</p>
+<h3 id="draw">DRAW<a class="headerlink" href="#draw" title="Permanent link">&para;</a></h3>
+<p>Toggle, turn on or turn off Draw Mode.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>DRAW
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>DRAW ON
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>DRAW OFF
+</span></code></pre></div>
+<h3 id="dummy-or-d">DUMMY or D<a class="headerlink" href="#dummy-or-d" title="Permanent link">&para;</a></h3>
+<p>This Action does nothing. This is intended for use with <a href="/manual/core-concepts#sequential-action-lists">PSEQ Action Lists</a> as well as <a href="/manual/core-concepts/#lseq-or-rlseq">LSEQ</a> and <a href="/manual/core-concepts/#default-with-stop">Default with Stop X-Clips</a>.</p>
+<h3 id="follow">FOLLOW<a class="headerlink" href="#follow" title="Permanent link">&para;</a></h3>
+<p>Toggle, turn on or turn off Follow.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>FOLLOW
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>FOLLOW ON
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>FOLLOW OFF
+</span></code></pre></div>
+<h3 id="fullvelo">FULLVELO<a class="headerlink" href="#fullvelo" title="Permanent link">&para;</a></h3>
+<p>Toggle, turn on or turn off Full Velocity. When on, notes sent from the controller selected as the Input of the ClyphX Pro Control Surface will have full velocity (127).</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>FULLVELO
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>FULLVELO ON
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>FULLVELO OFF
+</span></code></pre></div>
+<h3 id="gq">GQ<a class="headerlink" href="#gq" title="Permanent link">&para;</a></h3>
+<p>Toggle Global Quantization value between None and the last value.</p>
+<h3 id="gq-x">GQ <code>x</code><a class="headerlink" href="#gq-x" title="Permanent link">&para;</a></h3>
+<p>Adjust Global Quantization. This is an <a href="/manual/general-action-information/#adjustable-properties">Adjustable Property</a>.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>GQ NONE
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>GQ 8 BARS
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>GQ &gt;
+</span></code></pre></div>
+<h3 id="grv-x">GRV <code>x</code><a class="headerlink" href="#grv-x" title="Permanent link">&para;</a></h3>
+<p>Adjust Global Groove Amount. This is a <a href="/manual/general-action-information/#quasi-continuous-parameters">Quasi Continuous Parameter</a>.</p>
+<h3 id="insaudio-or-insmidi">INSAUDIO or INSMIDI<a class="headerlink" href="#insaudio-or-insmidi" title="Permanent link">&para;</a></h3>
+<p>Insert an Audio or MIDI Track to the right of the selected Track that will be armed and routed from the selected Track. This will not perform an insertion if the selected Track is not the correct type. For example, if the selected Track doesn't have Audio output, <code>INSAUDIO</code> will do nothing.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>INSAUDIO
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>INSMIDI
+</span></code></pre></div>
+<h3 id="loc-x">LOC <code>x</code><a class="headerlink" href="#loc-x" title="Permanent link">&para;</a></h3>
+<p><code>x</code> is the name of the Arrangement Locator to jump to.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>LOC &quot;Verse 1&quot;
+</span></code></pre></div>
+<h3 id="loc-or">LOC &lt; or &gt;<a class="headerlink" href="#loc-or" title="Permanent link">&para;</a></h3>
+<p>Jump to the Prev/Next Arrangement Locator.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>LOC &lt;
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>LOC &gt;
+</span></code></pre></div>
+<h3 id="locloop-x">LOCLOOP <code>x</code><a class="headerlink" href="#locloop-x" title="Permanent link">&para;</a></h3>
+<p><code>x</code> is the name of the Arrangement Locator to jump to. Also, the Arrangement Loop Start position will move to the position of this Locator.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>LOCLOOP &quot;Hook&quot;
+</span></code></pre></div>
+<h3 id="loop">LOOP<a class="headerlink" href="#loop" title="Permanent link">&para;</a></h3>
+<p>Toggle, turn on or turn off Arrangement Loop.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>LOOP
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>LOOP ON
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>LOOP OFF
+</span></code></pre></div>
+<h3 id="loop-x">LOOP *<code>x</code><a class="headerlink" href="#loop-x" title="Permanent link">&para;</a></h3>
+<p><code>x</code> is the value to multiply the Arrangement Loop Length by. </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>LOOP *0.5
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>LOOP *2
+</span></code></pre></div>
+<h3 id="loop-or">LOOP &lt; or &gt;<a class="headerlink" href="#loop-or" title="Permanent link">&para;</a></h3>
+<p>Move the Arrangement Loop Backward/Forward by its length.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>LOOP &lt;
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>LOOP &gt;
+</span></code></pre></div>
+<h3 id="loop-x-or-x">LOOP &lt;<code>x</code> or &gt;<code>x</code><a class="headerlink" href="#loop-x-or-x" title="Permanent link">&para;</a></h3>
+<p>Move the Arrangement Loop Backward/Forward by <code>x</code> Beats (specify <code>B</code> for Bars).</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>LOOP &lt;4
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>LOOP &gt;16
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>LOOP &gt;8B
+</span></code></pre></div>
+<h3 id="loop-reset">LOOP RESET<a class="headerlink" href="#loop-reset" title="Permanent link">&para;</a></h3>
+<p>Reset Arrangement Loop Start position to 1.1.1.</p>
+<h3 id="loop-start-x">LOOP START <code>x</code><a class="headerlink" href="#loop-start-x" title="Permanent link">&para;</a></h3>
+<p><code>x</code> is the Arrangement Loop Start position to set in Bars.Beats.Sixteenths. Alternatively, you can specify the name of an Arrangement Locator to move the Arrangement Loop Start position to the position of the named Locator.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>LOOP START 4.1.1
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>LOOP START 1.1.1
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>LOOP START &quot;My Locator&quot;
+</span></code></pre></div>
+<h3 id="metro">METRO<a class="headerlink" href="#metro" title="Permanent link">&para;</a></h3>
+<p>Toggle, turn on or turn off Metronome. </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>METRO
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>METRO ON
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>METRO OFF
+</span></code></pre></div>
+<h3 id="msg-x">MSG <code>x</code><a class="headerlink" href="#msg-x" title="Permanent link">&para;</a></h3>
+<p><code>x</code> is the message to show in Live's Status Bar. By default, this will show the message in lower case. If you'd like capitalization to be preserved, use quotes.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>MSG HELLO WORLD
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>MSG &quot;Preserve Caps&quot;
+</span></code></pre></div>
+<h3 id="open-x">OPEN <code>x</code><a class="headerlink" href="#open-x" title="Permanent link">&para;</a></h3>
+<p>x is the path to the file to open in its default application. When opening Sets, dialogs that come up upon closing the current Set will be managed.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>OPEN &quot;/Users/Stray/My File.txt&quot;
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>OPEN &quot;C:\My Live Set.als&quot;
+</span></code></pre></div>
+<h3 id="over">OVER<a class="headerlink" href="#over" title="Permanent link">&para;</a></h3>
+<p>Toggle, turn on or turn off Arrangement Overdub. </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>OVER
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>OVER ON
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>OVER OFF
+</span></code></pre></div>
+<h3 id="pin">PIN<a class="headerlink" href="#pin" title="Permanent link">&para;</a></h3>
+<p>Toggle, turn on or turn off Punch In. </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>PIN
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>PIN ON
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>PIN OFF
+</span></code></pre></div>
+<h3 id="pout">POUT<a class="headerlink" href="#pout" title="Permanent link">&para;</a></h3>
+<p>Toggle, turn on or turn off Punch Out.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>PIN, PIN ON, PIN OFF
+</span></code></pre></div>
+<h3 id="pseq-reset">PSEQ RESET<a class="headerlink" href="#pseq-reset" title="Permanent link">&para;</a></h3>
+<p>Reset all <a href="/manual/core-concepts#sequential-action-lists">PSEQ Action Lists</a> so that they start back at their beginning.</p>
+<h3 id="pseq-reset-x">PSEQ RESET <code>x</code><a class="headerlink" href="#pseq-reset-x" title="Permanent link">&para;</a></h3>
+<p><code>x</code> is the <a href="/manual/core-concepts#identifiers">Identifier</a> of the PSEQ Action List to reset. </p>
+<h3 id="rec">REC<a class="headerlink" href="#rec" title="Permanent link">&para;</a></h3>
+<p>Toggle, turn on or turn off Arrangement Record. </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>REC
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>REC ON
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>REC OFF
+</span></code></pre></div>
+<h3 id="reinit">REINIT<a class="headerlink" href="#reinit" title="Permanent link">&para;</a></h3>
+<p>Reinitialize all <a href="/manual/core-cocncepts#macros">Macros</a> and <a href="/manual/core-concepts#variables">Variables</a> to their initial states. This will cause the related files to be re-read allowing you to modify the files, trigger this Action and have the changes to the files immediately be applied.</p>
+<h3 id="restart">RESTART<a class="headerlink" href="#restart" title="Permanent link">&para;</a></h3>
+<p>Restart Arrangement to Position 1.1.1.</p>
+<h3 id="rq">RQ<a class="headerlink" href="#rq" title="Permanent link">&para;</a></h3>
+<p>Adjust Record Quantization. This is an <a href="/manual/general-action-information/#adjustable-properties">Adjustable Property</a>. The names of the available Quantization value are: </p>
+<ul>
+<li><code>NONE</code></li>
+<li><code>1/4</code></li>
+<li><code>1/8</code></li>
+<li><code>18T</code></li>
+<li><code>1/8+T</code></li>
+<li><code>1/16</code></li>
+<li><code>1/16T</code></li>
+<li><code>1/16+T</code></li>
+<li><code>1/32</code></li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>RQ NONE
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>RQ 1/4
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>RQ &gt;
+</span></code></pre></div>
+<h3 id="rpt">RPT<a class="headerlink" href="#rpt" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The RPT Actions require that a controller be selected as the Input of the ClyphX Pro Control Surface and that its Track switch be turned on. When RPT is on, notes sent from the controller will produce a consistent stream of rhythmic notes at the specified rate. Additionally, the available Note Repeat rates are as follows: <code>OFF</code>, <code>1/4D</code>, <code>1/4</code>, <code>1/4T</code>, <code>1/8D</code>, <code>1/8</code>, <code>1/8T</code>, <code>1/16D</code>, <code>1/16</code>, <code>1/16T</code>, <code>1/32D</code>, <code>1/32</code>, <code>1/32T</code>, <code>1/64D</code>, <code>1/64</code>, <code>1/64T</code> (where 'D' stands for dotted and 'T' stands for triplet).</p>
+</div>
+<p>Toggle Note Repeat on/off.</p>
+<h3 id="rpt-x">RPT <code>x</code><a class="headerlink" href="#rpt-x" title="Permanent link">&para;</a></h3>
+<p><code>x</code> is the Note Repeat rate to set.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>RPT OFF
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>RPT 1/4
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>RPT 1/32T
+</span></code></pre></div>
+<h3 id="rtrig">RTRIG<a class="headerlink" href="#rtrig" title="Permanent link">&para;</a></h3>
+<p>Retrigger all Clips that are currently recording.</p>
+<h3 id="satm">SATM<a class="headerlink" href="#satm" title="Permanent link">&para;</a></h3>
+<p>Toggle, turn on or turn off Automation Arm. </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>SATM
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>SATM ON
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>SATM OFF
+</span></code></pre></div>
+<h3 id="satmr">SATMR<a class="headerlink" href="#satmr" title="Permanent link">&para;</a></h3>
+<p>Re-enable automation that has been overridden.</p>
+<h3 id="scl">SCL<a class="headerlink" href="#scl" title="Permanent link">&para;</a></h3>
+<p>Toggle, enable, or disable Live's Scale Mode</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>SCL
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>SCL ON
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>SCL OFF
+</span></code></pre></div>
+<h3 id="scl-root-x">SCL ROOT <code>x</code><a class="headerlink" href="#scl-root-x" title="Permanent link">&para;</a></h3>
+<p>Set the root note of Live's Scale Mode to <code>x</code>. Sharps (<code>♯</code>) are allowed, flats (<code>b</code>) are not.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>SCL ROOT C
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>SCL ROOT F#
+</span></code></pre></div>
+<h3 id="scl-name-x">SCL NAME <code>x</code><a class="headerlink" href="#scl-name-x" title="Permanent link">&para;</a></h3>
+<p>Set the scale of Live's Scale Mode. Allowed value of <code>x</code> is any of the scale names from the dropdown menu in Live's UI.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Capitalization is not important but spacing and punctuation are.</p>
+<p>Do not enclose the scale name in quotes.</p>
+</div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>SCL NAME MAJOR
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>SCL NAME minor
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>SCL NAME phrygian dominant
+</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>SCL NAME half-whole dim.
+</span></code></pre></div>
+<h3 id="selp-x">SELP <code>x</code><a class="headerlink" href="#selp-x" title="Permanent link">&para;</a></h3>
+<p>Adjust the value of the selected parameter. This is a <a href="/manual/general-action-information/#continuous-parameters">Continuous Parameter</a>.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>SELP 100
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>SELP &gt;
+</span></code></pre></div>
+<h3 id="setcont">SETCONT<a class="headerlink" href="#setcont" title="Permanent link">&para;</a></h3>
+<p>Continue playback from the last stop point. This is only useful when triggered from an <a href="/manual/core-concepts#x-controls">X-Control</a> or <a href="/manual/core-concepts#x-osc">X-OSC</a>.</p>
+<h3 id="setjump-x">SETJUMP <code>x</code><a class="headerlink" href="#setjump-x" title="Permanent link">&para;</a></h3>
+<p><code>x</code> is the Arrangement Playback Position to jump to in
+Bars.Beats.Sixteenths.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>SETJUMP 8.1.1
+</span></code></pre></div>
+<h3 id="setjump-or">SETJUMP &lt; or &gt;<a class="headerlink" href="#setjump-or" title="Permanent link">&para;</a></h3>
+<p>Jump the Arrangement's Playback Position Backward/Forward by 1 Beat.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>SETJUMP &lt;, SETJUMP &gt;
+</span></code></pre></div>
+<h3 id="setjump-x-or-x">SETJUMP &lt;<code>x</code> or &gt;<code>x</code><a class="headerlink" href="#setjump-x-or-x" title="Permanent link">&para;</a></h3>
+<p>Jump the Arrangement's Playback Position Backward/Forward by <code>x</code> Beats (specify <code>B</code> for Bars).</p>
+<h3 id="setloc">SETLOC<a class="headerlink" href="#setloc" title="Permanent link">&para;</a></h3>
+<p>Add a Locator at the current Arrangement position or, if a Locator already exists at the position, delete the Locator.</p>
+<h3 id="setplay">SETPLAY<a class="headerlink" href="#setplay" title="Permanent link">&para;</a></h3>
+<p>Toggle, turn on or turn off playback. </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>SETPLAY
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>SETPLAY ON
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>SETPLAY OFF
+</span></code></pre></div>
+<h3 id="setplaysel">SETPLAYSEL<a class="headerlink" href="#setplaysel" title="Permanent link">&para;</a></h3>
+<p>Play the selection in Arrangement View if there is one.</p>
+<h3 id="setstop">SETSTOP<a class="headerlink" href="#setstop" title="Permanent link">&para;</a></h3>
+<p>Stop playback. This will actually toggle playback state, so it can be used to start/stop playback when triggered from an <a href="/manual/core-concepts#x-controls">X-Control</a> or <a href="/manual/core-concepts#x-osc">X-OSC</a>.</p>
+<h3 id="sig-xy">SIG <code>x</code>/<code>y</code><a class="headerlink" href="#sig-xy" title="Permanent link">&para;</a></h3>
+<p><code>x</code> is the Time Signature Numerator and <code>y</code> is the Denominator. </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>SIG 4/4
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>SIG 6/8
+</span></code></pre></div>
+<h3 id="srec">SREC<a class="headerlink" href="#srec" title="Permanent link">&para;</a></h3>
+<p>Toggle, turn on or turn off Session Record.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>SREC
+</span><span id="__span-37-2"><a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>SREC ON
+</span><span id="__span-37-3"><a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a>SREC OFF
+</span></code></pre></div>
+<h3 id="srecfix-x">SRECFIX <code>x</code><a class="headerlink" href="#srecfix-x" title="Permanent link">&para;</a></h3>
+<p>Trigger fixed-length Session Record on all armed Tracks where x is the length to record in Bars. Note, however, that Session Recording is always quantized according to Global Quantization and so your Global Quantization value needs to be less than or equal to the number of Bars to record for. For example, to record for 4 Bars, Global Quantization would need to be 4 Bars or less.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>SRECFIX 4
+</span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>SRECFIX 16
+</span><span id="__span-38-3"><a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a>SRECFIX 0.5
+</span></code></pre></div>
+<h3 id="stopall">STOPALL<a class="headerlink" href="#stopall" title="Permanent link">&para;</a></h3>
+<p>Stop all Clips</p>
+<h3 id="stopall-nq">STOPALL NQ<a class="headerlink" href="#stopall-nq" title="Permanent link">&para;</a></h3>
+<p>Stop all Clips immediately (not quantized).</p>
+<h3 id="swing-x">SWING <code>x</code><a class="headerlink" href="#swing-x" title="Permanent link">&para;</a></h3>
+<p>Adjust the Swing amount (in the range of 0 - 100) to apply to Note Repeat(RPT). This is a <a href="/manual/general-action-information/#quasi-continuous-parameters">Quasi Continuous Parameter</a>.</p>
+<h3 id="tapbpm">TAPBPM<a class="headerlink" href="#tapbpm" title="Permanent link">&para;</a></h3>
+<p>Tap Tempo.</p>
+<h3 id="tfollow">TFOLLOW<a class="headerlink" href="#tfollow" title="Permanent link">&para;</a></h3>
+<p>Toggle, turn on or turn off Tempo Follower. </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>TFOLLOW
+</span><span id="__span-39-2"><a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a>TFOLLOW ON
+</span><span id="__span-39-3"><a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a>TFOLLOW OFF
+</span></code></pre></div>
+<h3 id="time">TIME<a class="headerlink" href="#time" title="Permanent link">&para;</a></h3>
+<p>Display the amount of time spent (in the format of hours:minutes:seconds) in Live's Status Bar since the current Live Set was loaded.</p>
+<h3 id="unbind">UNBIND<a class="headerlink" href="#unbind" title="Permanent link">&para;</a></h3>
+<p><em>For use with the optional <a href="/manual/optional-accessories/#clyphx-pro-bindings">ClyphX Pro Bindings Accessory</a>.</em></p>
+<p>Unbind all bound controls (leaving them with no binding).</p>
+<h3 id="undo-or-redo">UNDO or REDO<a class="headerlink" href="#undo-or-redo" title="Permanent link">&para;</a></h3>
+<p>Undo or Redo.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>UNDO
+</span><span id="__span-40-2"><a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>REDO
+</span></code></pre></div>
+<h3 id="wait-x">WAIT <code>x</code><a class="headerlink" href="#wait-x" title="Permanent link">&para;</a></h3>
+<p><code>x</code> is the amount of time (in hundreds of milliseconds) to wait before
+proceeding to the next Action in the Action List. This cannot be used in <a href="/manual/core-concepts/#sequential-action-lists">PSEQ Action Lists</a> or <a href="/manual/core-concepts/#lseq-or-rlseq">LSEQ X-Clips</a>.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>WAIT 2
+</span><span id="__span-41-2"><a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a>WAIT 10
+</span></code></pre></div>
+<h3 id="waits-x">WAITS <code>x</code><a class="headerlink" href="#waits-x" title="Permanent link">&para;</a></h3>
+<p>Same as above except <code>x</code> is the amount of time in Beats (specify <code>B</code> for Bars) to wait.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>WAITS 2B
+</span><span id="__span-42-2"><a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>WAITS 8
+</span></code></pre></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Action Reference">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Action Reference
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../scene-actions/" class="md-footer__link md-footer__link--next" aria-label="Next: Scene Actions">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Scene Actions
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "content.code.copy", "navigation.tracking", "navigation.sections", "navigation.footer", "navigation.header", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="../../js/open_in_new_tab.js"></script>
+      
+    
+  </body>
+</html>

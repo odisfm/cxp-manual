@@ -1,0 +1,15 @@
+header span.md-ellipsis {
+    font-weight: 500;
+}
+
+.md-code__content {
+    span:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+a {
+    &:hover {
+        text-decoration: underline;
+    }
+}

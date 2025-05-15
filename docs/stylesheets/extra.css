@@ -7,3 +7,9 @@ header span.md-ellipsis {
         margin-bottom: 10px;
     }
 }
+
+a {
+    &:hover {
+        text-decoration: underline;
+    }
+}

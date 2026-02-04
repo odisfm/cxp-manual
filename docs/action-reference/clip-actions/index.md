@@ -271,7 +271,7 @@ CLIP SEMI >
 
 ### CLIP SIG `x`/`y`
 
-x``` is the Time Signature Numerator and `y` is the Denominator. 
+`x` is the Time Signature Numerator and `y` is the Denominator. 
 
 ```
 CLIP SIG 4/4

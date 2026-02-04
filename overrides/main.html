@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+
+{{ super() }}
+
+<script>
+    document$.subscribe(() => {
+        console.log("adding notranslate")
+        const currentPath = window.location.pathname;
+
+        if (currentPath.includes("action-reference")) {
+            const actionNames = document.querySelectorAll("h3");
+            actionNames.forEach(actionName => {
+                actionName.classList.add("notranslate");
+                actionName.setAttribute("translate", "no");
+            });
+        }
+    });
+
+</script>
+
+{% endblock %}

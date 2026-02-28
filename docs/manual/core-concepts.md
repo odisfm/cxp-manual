@@ -187,6 +187,12 @@ As far as values, Variables can be assigned to virtually any value or to any val
 
 `%MY_VARIABLE% = song.view.selected_track.name`
 
+!!! warning "ClyphX Pro 1.3.1 and above"
+
+    In current versions of ClyphX Pro, you need to use `song_obj()` instead of just `song`.
+    
+    In the above example, you would use `song_obj().view.selected_track.name`
+
 To learn more about what you can access through song, see the [LOM documentation](https://docs.cycling74.com/apiref/lom/), which covers a subset of the API (known as the LOM). Note, however, API paths and LOM paths are slightly different. This example demonstrates how to transpose LOM paths to API paths:
 
 **LOM:** `live_set tracks 4 clip_slots 6`
